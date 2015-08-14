@@ -1,0 +1,441 @@
+/*
+Tutorial Name: Scroll To Top Then Fixed Navigation Effect With JQuery and CSS
+Description: Create a sticky navigation bar that remains fixed to the top after scroll
+Author: Stanislav Kostadinov
+Author URI: http://stanislav.it
+Version: 1.0.0 - 11.01.2014
+*/
+@import url("https://fonts.googleapis.com/css?family=Nixie+One");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two");
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700");
+@import url("http://fonts.googleapis.com/css?family=Ubuntu");
+@import url("http://fonts.googleapis.com/css?family=Oswald:300,400,700");
+
+* {margin: 0; padding: 0;}
+
+a {text-decoration: none;}
+
+/* This class is added on scroll */
+.fixed {
+	position: fixed; 
+	top: 0; 
+	height: 70px; 
+	z-index: 1;
+}
+
+body {
+	color: #fff;
+	font-family:'Oswald', sans-serif;
+	font-size: 20px;
+	text-align: center;
+}
+/* Making invisible for waypoints */
+
+
+
+/* Navigation Settings */
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background: #231f20;
+}
+
+nav li {
+	display: inline-block;
+	padding: 24px 10px;
+	cursor: pointer;
+}
+
+nav li a {
+	color: #f4f0ed;
+	text-transform: uppercase;
+	transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+
+}
+
+nav li a:hover {
+	color: #ff1ec7;
+	/*color: #15ad9f;*/
+	/*color: #ff7b29;*/
+}
+
+
+section {
+	min-height: 95vh;
+	padding-bottom: 50px;
+}
+
+/* Screens Settings */
+#screen1 {	
+	background: #FFF;
+	background-image: url("../img/nyc3.png");
+	background-size: 70% 100%;
+	background-position: 0 10px;
+	background-repeat: repeat-x;
+	/*background-size: 100% 100%;*/
+}
+
+.topOfTitle {
+	padding-top: 200px;
+	/*width: 90%;*/
+}
+
+#screen1 p {
+	padding-top: 200px;
+	font-size: 80px;
+	/*color: #00b3b3;*/
+	/*text-shadow: 1px 1px 0px rgba(237, 237, 237, 0.5), 3px 3px 0px rgba(0,0,0,0.5);*/
+	font-family:'Oswald', sans-serif;
+	/*font-family: 'Lobster Two', cursive;*/
+	padding: 10% 25%;
+    -webkit-text-stroke: 1px #FFF;
+    color: #FFF;
+    text-shadow:
+      5px 5px 0 #00b3b3,
+      -1px -1px 0 #00b3b3,  
+      1px -1px 0 #00b3b3,
+      -1px 1px 0 #00b3b3,
+      3px 3px 0 #00b3b3;
+}
+#hi::first-letter {
+	font-size: 90px;
+}
+
+
+#screen2 {
+	background: url("../img/washi.png");
+	background-repeat: repeat;
+	padding-top: 30px;
+}
+
+#screen2 .vis:first-letter {
+	font-size: 40px;
+	-webkit-text-stroke: 1px #FFF;
+    color: #FFF;
+    text-shadow:
+      5px 5px 0 #00b3b3,
+      -1px -1px 0 #00b3b3,  
+      1px -1px 0 #00b3b3,
+      -1px 1px 0 #00b3b3,
+      3px 3px 0 #00b3b3;
+}
+
+.span {
+	font-size: 20px;
+    color: #00b3b3;
+    font-weight: bold;
+    
+}
+.pimg {
+	/*border: 10px dotted #fcf8f9;*/
+	/*margin: 20px 20px 20px -100px;*/
+	/*display: none;*/
+	background-image: url("../img/maiface.png");
+	background-size: cover;
+	width: 360px;
+	height: 380px;
+	margin: 10px 40px;
+	cursor: pointer;
+	/*border-radius: 40%;*/
+	transition-property: background-image;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.pimg:hover {
+	background-image: url("../img/maifaceblue.png");
+}
+
+.about {
+	width: 300px;
+	font-size: 40px;
+	font-family:'Oswald', sans-serif;
+	padding: 30px;
+	margin: 0 auto;
+	text-align: center;
+    -webkit-text-stroke: 1px #FFF;
+    color: #FFF;
+    text-shadow:
+     5px 5px 0 #ff5079,
+      -1px -1px 0 #ff5079,  
+      1px -1px 0#ff5079,
+      -1px 1px 0 #ff5079,
+      3px 3px 0 #ff5079;
+    letter-spacing: 3px;
+}
+
+.about::first-letter {
+	font-size: 70px;
+}
+
+.vis {
+	color: #605656;
+	/*margin: 5px;*/
+	/*opacity: 1;*/
+}
+
+.inv {
+	/*margin-left: -100px;*/
+ 	display: none;
+ 	/*opacity: 0;*/
+}
+
+.intro {
+	font-family: 'Ubuntu', sans-serif;
+	background: #fcf8f9;
+	border: 5px solid #34495E;
+/*	border: 5px solid #9da0ff;
+	outline: 5px solid #ff9da0;*/
+	border-radius: 15px;
+	/*border: 10px dotted #ff696c;*/
+	/*color: #605656;*/
+}
+
+.description  {
+	text-align: left;
+	padding: 20px;
+	line-height: 40px;
+}
+
+#screen3 {
+	background: url("../img/arches.png");
+	background-repeat: repeat;
+	/*background: #ede6e1;*/
+}
+
+.screenSan {
+	margin-top: 100px;
+}
+.portfolio{
+	width: 300px;
+	font-size: 40px;
+	font-family:'Oswald', sans-serif;
+	padding: 30px;
+	margin: 0 auto;
+	text-align: center;
+    -webkit-text-stroke: 1px #FFF;
+    color: #FFF;
+    text-shadow:
+     5px 5px 0 #8E44AD,
+      -1px -1px 0 #8E44AD,  
+      1px -1px 0 #8E44AD,
+      -1px 1px 0 #8E44AD,
+      3px 3px 0 #8E44AD;
+    letter-spacing: 3px;
+}
+
+.portfolio::first-letter {
+	font-size: 70px;
+}
+
+.mypages {
+	width: 409px;
+	height: 313px;
+}
+
+.sites {
+	/*width: 500px;*/
+	/*height: 313px;*/
+	overflow: hidden;
+	float: left;
+	margin: 50px 4.1%;
+	border: 5px solid rgba(184, 188, 180,0.6);
+	background: #fcf8f9;
+	border-radius: 10px;
+	padding: 0 !important;
+}
+.sites img {
+	/*width: 402.5px;*/
+	/*height: 300px;*/
+    -moz-transition: -moz-transform 0.5s linear;
+    -webkit-transition: -webkit-transform 0.5s linear;
+    -o-transition: -o-transform 0.5s linear;
+    -ms-transition: -ms-transform 0.5s linear;
+    transition: transform 0.5s linear;
+}
+.sites img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+figure {
+	position: relative;
+	overflow: hidden;
+/*	width: 500px;
+	height: 313px;*/
+}
+figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(246, 36, 89,.9);
+	-webkit-transition: 0.7s;
+	transition: 0.7s;
+	opacity: 0;
+}
+figure:hover figcaption {
+	opacity: 1;
+}
+
+h3 {
+	color: #FFF;
+}
+.siteDescription {
+	position: relative;
+	top: calc(40% - 30px);
+	color: #FFF;
+	text-align: center;
+	/*background: #000;*/
+}
+
+#screen4 {
+	/*background: #f4f0ed;*/
+	background: url("../img/escheresque.png");
+	background-repeat: repeat;
+ }	
+
+.scr4 {
+	margin-top: 70px;
+}
+.resume {
+	width: 500px;
+	font-size: 40px;
+	font-family:'Oswald', sans-serif;
+	padding: 30px;
+	margin: 0 auto;
+	text-align: center;
+    -webkit-text-stroke: 1px #FFF;
+    color: #FFF;
+    text-shadow:
+     5px 5px 0 #3eb4a7,
+      -1px -1px 0 #3eb4a7,  
+      1px -1px 0 #3eb4a7,
+      -1px 1px 0 #3eb4a7,
+      3px 3px 0 #3eb4a7;
+    letter-spacing: 3px;
+}
+.resume::first-letter {
+	font-size: 70px;
+}
+
+.resumePdf {
+	width: 550px;
+	height: 775px;
+}
+/*.icons {
+	background: #94dac0;
+	height: 225px;
+}*/
+
+.img-circle {
+	margin: 20px;
+	border: 5px solid #34495E;
+}
+#screen5 {
+	/*background: #ede6e1;*/
+	background: url("../img/swirl_pattern.png");
+	background-repeat: repeat;
+}
+
+.screenGo {
+	margin-top: 100px;
+}
+.contact {
+	width: 300px;
+	font-size: 40px;
+	font-family:'Oswald', sans-serif;
+	padding: 30px;
+	margin: 0 auto;
+	text-align: center;
+    -webkit-text-stroke: 1px #FFF;
+    color: #FFF;
+    text-shadow:
+     5px 5px 0 #ecd306,
+      -1px -1px 0 #ecd306,  
+      1px -1px 0 #ecd306,
+      -1px 1px 0 #ecd306,
+      3px 3px 0 #ecd306;
+    letter-spacing: 3px;
+
+}
+
+.contact::first-letter {
+	font-size: 70px;
+}
+
+.contactList li {
+	display: inline-block;
+	margin: 20px;
+}
+
+.contactIcons {
+	width: 100px;
+	display: inline;
+
+}
+
+.seeya {
+	width: 120px;
+}
+
+
+/* For iPad in landscape */
+
+
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+#screen1 {	
+	background: #FFF;
+	background-image: url("../img/nyc2.png");
+	background-position: 0 10px;
+	background-repeat: repeat-x;
+	padding-bottom: 0;
+ }
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	#screen1 {	
+	background: #FFF;
+	background-image: url("../img/nyc2.png");
+	/*background-position: 0;*/
+	background-size: 100% 100%;
+	background-repeat: repeat-x;
+	padding-bottom: 0;
+}
+
+}
+	nav li {
+		padding: 24px 4px;
+	}
+
+	nav li a {
+		font-size: 14px;
+	}
+}
+/* For iPhone6 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+	#screen1 {	
+	background: #FFF;
+	background-image: url("../img/nyc2.png");
+	background-position: 0 10px;
+	background-size: 100% 100%;
+	background-repeat: repeat-x;
+	padding-bottom: 0;
+}
+
+}
