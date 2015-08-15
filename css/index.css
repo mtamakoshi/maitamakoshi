@@ -431,9 +431,9 @@ h3 {
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
 	#screen1 {	
 	background: #FFF;
-	background-image: url("../img/nyc2.png");
+	background-image: url("../img/nyc3.png");
 	background-position: 0 10px;
-	background-size: 100% 100%;
+	background-size: 50% 100%;
 	background-repeat: repeat-x;
 	padding-bottom: 0;
 }
