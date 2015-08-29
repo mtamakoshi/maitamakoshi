@@ -70,6 +70,10 @@ section {
 	padding-bottom: 50px;
 }
 
+.sectionTitle {
+ font-size: 50px;
+}
+
 /* Screens Settings */
 #screen1 {	
 	background: #FFF;
@@ -350,7 +354,352 @@ h3 {
     -webkit-text-stroke: 1px #FFF;
     color: #FFF;
     text-shadow:
-     5px 5px 0 #ecd306,
+      5px 5px 0 #ecd306,
+      -1px -1px 0 #ecd306,  
+      1px -1px 0 #ecd306,
+      -1px 1px 0 #ecd306,
+      3px 3px 0 #ecd306;
+    letter-spacing: 3px;
+
+}
+
+.contact::first-letter {
+	font-size: 70px;
+}
+
+.contactList li {
+	display: inline-block;
+	margin: 20px;
+}
+
+.contactIcons {
+	width: 100px;
+	display: inline;
+
+}
+
+.seeya {
+	width: 120px;
+}
+
+/************************************* Media Query **************************************/
+
+/********************************/
+/*** For iPad in Portrait *****/
+/*******************************/
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+
+
+
+
+}
+
+
+
+/********************************/
+/*** For iPad in Landscape *****/
+/*******************************/
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+
+}
+
+
+/**************************************
+/********* For iPhone6 Portrait ********/
+/***************************************/
+
+
+@media only screen and (max-width: 600px) { 
+
+/* Navigation Settings */
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background: #231f20;
+}
+
+nav li {
+	display: inline-block;
+	padding: 10px 5px;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+section {
+	min-height: 95vh;
+	padding-bottom: 20px;
+}
+
+
+/* Screens Settings */
+#screen1 {	
+	height: 50vh;
+	background: #FFF;
+	background-image: url("../img/nyc6.png");
+	background-position: 0 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.topOfTitle {
+	padding-top: 175px;
+	width: 500px;
+	/*width: 90%;*/
+}
+
+#screen1 p {
+	padding-top: 200px;
+	font-size: 80px;
+	font-family:'Oswald', sans-serif;
+	padding: 10% 25%;
+    -webkit-text-stroke: 1px #FFF;
+    color: #FFF;
+    text-shadow:
+      5px 5px 0 #00b3b3,
+      -1px -1px 0 #00b3b3,  
+      1px -1px 0 #00b3b3,
+      -1px 1px 0 #00b3b3,
+      3px 3px 0 #00b3b3;
+}
+#hi::first-letter {
+	font-size: 90px;
+}
+
+
+#screen2 {
+	background: url("../img/washi.png");
+	background-repeat: repeat;
+}
+
+#screen2 .vis:first-letter {
+	font-size: 40px;
+	-webkit-text-stroke: 1px #FFF;
+    color: #FFF;
+    text-shadow:
+      5px 5px 0 #00b3b3,
+      -1px -1px 0 #00b3b3,  
+      1px -1px 0 #00b3b3,
+      -1px 1px 0 #00b3b3,
+      3px 3px 0 #00b3b3;
+}
+
+.span {
+	font-size: 20px;
+    color: #00b3b3;
+    font-weight: bold;
+    
+}
+.pimg {
+
+	background-image: url("../img/maiface.png");
+	background-size: cover;
+	width: 360px;
+	height: 380px;
+	margin: 10px 40px;
+	cursor: pointer;
+	transition-property: background-image;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.pimg:hover {
+	background-image: url("../img/maifaceblue.png");
+}
+
+.about {
+	width: 300px;
+	font-size: 50px;
+	font-family:'Oswald', sans-serif;
+	padding: 30px;
+	margin:0 auto;
+	text-align: center;
+    -webkit-text-stroke: 1px #FFF;
+    color: #FFF;
+    text-shadow:
+     5px 5px 0 #ff5079,
+      -1px -1px 0 #ff5079,  
+      1px -1px 0#ff5079,
+      -1px 1px 0 #ff5079,
+      3px 3px 0 #ff5079;
+    letter-spacing: 3px;
+}
+
+.about::first-letter {
+	font-size: 70px;
+}
+
+.vis {
+	color: #605656;
+	/*margin: 5px;*/
+	/*opacity: 1;*/
+}
+
+.inv {
+	/*margin-left: -100px;*/
+ 	display: none;
+ 	/*opacity: 0;*/
+}
+
+.intro {
+	font-family: 'Ubuntu', sans-serif;
+	background: #fcf8f9;
+	border: 5px solid #34495E;
+	border-radius: 15px;
+}
+
+.description  {
+	text-align: left;
+	padding: 20px;
+	line-height: 40px;
+}
+
+#screen3 {
+	background: url("../img/arches.png");
+	background-repeat: repeat;
+	padding-top: 30px;
+}
+
+.screenSan {
+	margin-top: 100px;
+}
+.portfolio{
+	width: 300px;
+	font-size: 50px;
+	font-family:'Oswald', sans-serif;
+	padding: 30px;
+	margin: 0 auto;
+	text-align: center;
+    -webkit-text-stroke: 1px #FFF;
+    color: #FFF;
+    text-shadow:
+     5px 5px 0 #8E44AD,
+      -1px -1px 0 #8E44AD,  
+      1px -1px 0 #8E44AD,
+      -1px 1px 0 #8E44AD,
+      3px 3px 0 #8E44AD;
+    letter-spacing: 3px;
+}
+
+.portfolio::first-letter {
+	font-size: 70px;
+}
+
+.sites {
+	width: 500px;
+	height: 313px;
+	overflow: hidden;
+	float: left;
+	margin: 50px 30px;
+	border: 5px solid rgba(184, 188, 180,0.6);
+	background: #fcf8f9;
+	border-radius: 10px;
+	padding: 0 !important;
+}
+
+.mypages {
+	width: 100%;
+	height: 100%;
+}
+
+figure {
+	position: relative;
+	overflow: hidden;
+/*	width: 500px;
+	height: 313px;*/
+}
+figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(246, 36, 89,.9);
+	-webkit-transition: 0.7s;
+	transition: 0.7s;
+	opacity: 0;
+}
+figure:hover figcaption {
+	opacity: 1;
+}
+
+h3 {
+	color: #FFF;
+}
+.siteDescription {
+	position: relative;
+	top: calc(40% - 30px);
+	color: #FFF;
+	text-align: center;
+	/*background: #000;*/
+}
+
+#screen4 {
+	/*background: #f4f0ed;*/
+	background: url("../img/escheresque.png");
+	background-repeat: repeat;
+	padding-top: 30px;
+ }	
+
+.scr4 {
+	margin-top: 70px;
+}
+.resume {
+	width: 500px;
+	font-size: 50px;
+	font-family:'Oswald', sans-serif;
+	padding: 30px;
+	margin: 0 auto;
+	text-align: center;
+    -webkit-text-stroke: 1px #FFF;
+    color: #FFF;
+    text-shadow:
+     5px 5px 0 #3eb4a7,
+      -1px -1px 0 #3eb4a7,  
+      1px -1px 0 #3eb4a7,
+      -1px 1px 0 #3eb4a7,
+      3px 3px 0 #3eb4a7;
+    letter-spacing: 3px;
+}
+.resume::first-letter {
+	font-size: 70px;
+}
+
+.resumePdf {
+	width: 550px;
+	height: 775px;
+}
+.img-circle {
+	margin: 20px;
+	border: 5px solid #34495E;
+}
+#screen5 {
+	/*background: #ede6e1;*/
+	background: url("../img/swirl_pattern.png");
+	background-repeat: repeat;
+	padding-top: 30px;
+}
+
+.screenGo {
+	margin-top: 100px;
+}
+.contact {
+	width: 310px;
+	font-size: 40px;
+	font-family:'Oswald', sans-serif;
+	padding: 30px;
+	margin: 0 auto;
+	text-align: center;
+    -webkit-text-stroke: 1px #FFF;
+    color: #FFF;
+    text-shadow:
+      5px 5px 0 #ecd306,
       -1px -1px 0 #ecd306,  
       1px -1px 0 #ecd306,
       -1px 1px 0 #ecd306,
@@ -379,120 +728,33 @@ h3 {
 }
 
 
-/********************************/
-/*** For iPad in landscape *****/
-/*******************************/
 
-@media only screen and (min-device-width: 768px) and (max-device-width : 1024px)  {
-  section {
-  	height: 100vh;
-  }
-  #screen1 {	
-	background: #FFF;
-	margin-bottom: 10px;
-	/*height: 100%;*/
  }
-  .topOfTitle {
-  	padding: 0;
-  	margin-top: 300px;
- 	width: 55%;
- }
- #screen2 {
-	background: url("../img/washi.png");
-	background-repeat: repeat;
-	padding-top: 10px;
-}
-
-.span {
-	font-size: 20px;
-    color: #00b3b3;
-    font-weight: bold;
-    
-}
-.pimg {
-	/*border: 10px dotted #fcf8f9;*/
-	/*margin: 20px 20px 20px -100px;*/
-	/*display: none;*/
-	background-image: url("../img/maiface.png");
-	background-size: cover;
-	width: 340px;
-	height: 360px;
-	margin: 10px auto;
-	cursor: pointer;
-	/*border-radius: 40%;*/
-	transition-property: background-image;
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
-}
-
-.about {
-	width: 300px;
-	font-size: 50px;
-	font-family:'Oswald', sans-serif;
-	padding: 30px;
-	margin:0 auto;
-	text-align: center;
-    -webkit-text-stroke: 1px #FFF;
-    color: #FFF;
-    text-shadow:
-     5px 5px 0 #ff5079,
-      -1px -1px 0 #ff5079,  
-      1px -1px 0#ff5079,
-      -1px 1px 0 #ff5079,
-      3px 3px 0 #ff5079;
-    letter-spacing: 3px;
-}
-
-.about::first-letter {
-	font-size: 70px;
-}
-
-.vis {
-	color: #605656;
-	font-size: 10px;
-	/*margin: 5px;*/
-	/*opacity: 1;*/
-}
-
-.inv {
-	/*margin-left: -100px;*/
- 	display: none;
- 	/*opacity: 0;*/
-}
 
 
-.description  {
-	text-align: left;
-	padding: 20px;
-	line-height: 40px;
-}
+/***************************************/
+/********* For iPhone6 Landscape ********/
+/***************************************/
 
-
-.sites {
-	float: left;
-	margin: 50px 250px;
-	padding: 0 !important;
-}
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) { 
 
 
 }
 
-/*******************************/
-/********* For iPhone6 ********/
-/******************************/
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+
+
+/*@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
 	section {
 		height: 100vh;
 	}
+	.sectionTitle {
+		font-size: 30px;
+	}
+
 	#screen1 {	
-	background: #FFF;
-/*	background-image: url("../img/nyc3.png");
-	background-position: 0 10px;
-	background-size: 50% 100%;
-	background-repeat: repeat-x;*/
-	padding-bottom: 0;
-	/*/height: 100%;*/
+	  background: #FFF;
+	  padding-bottom: 0;
 }
 	.topOfTitle {
 		padding: 0;
@@ -515,38 +777,17 @@ h3 {
     
 }
 .pimg {
-	/*border: 10px dotted #fcf8f9;*/
-	/*margin: 20px 20px 20px -100px;*/
-	/*display: none;*/
 	background-image: url("../img/maiface.png");
 	background-size: cover;
-	width: 340px;
-	height: 360px;
-	margin: 10px auto;
+	width: 180px;
+	height: 180px;
+	margin: 30px auto;
 	cursor: pointer;
-	/*border-radius: 40%;*/
 	transition-property: background-image;
     transition-duration: 0.5s;
     transition-timing-function: linear;
 }
 
-.about {
-	width: 300px;
-	font-size: 50px;
-	font-family:'Oswald', sans-serif;
-	padding: 30px;
-	margin:0 auto;
-	text-align: center;
-    -webkit-text-stroke: 1px #FFF;
-    color: #FFF;
-    text-shadow:
-     5px 5px 0 #ff5079,
-      -1px -1px 0 #ff5079,  
-      1px -1px 0#ff5079,
-      -1px 1px 0 #ff5079,
-      3px 3px 0 #ff5079;
-    letter-spacing: 3px;
-}
 
 .about::first-letter {
 	font-size: 70px;
@@ -578,12 +819,14 @@ h3 {
 
 
 .sites {
-/*	width: 500px;
-	height: 313px;*/
+	display: block;
+	width: 400px;
+	height: 255px;
 	overflow: hidden;
 	float: left;
-	margin: 50px 250px;
+	margin: 50px;
 }
 
 
 }
+*/
