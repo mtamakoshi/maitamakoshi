@@ -22,7 +22,7 @@ $('.screenNi').waypoint(function(direction) {
 	  $('.introduction').removeClass('animated fadeInRight intro description vis');
 	  $('#screen2 .vis').addClass('inv');
 	}
-   },{offset:'80%'});
+   },{offset:'70%'});
 
 
  $('.screenSan').waypoint(function(direction) {
