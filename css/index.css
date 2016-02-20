@@ -34,35 +34,37 @@ body {
 	background-size: cover;
 }
 
+.top-msg {
+	padding-top: 7%;
+}
 #japanese {
+	/*width: 250px;*/
 	color: #FFF;
 	font-family: 'Noto Sans Japanese', serif;
 	font-weight: bold;
 	font-size: 40px;
-	position: relative;
-	top: 30%;
-	left: 30%;
+	text-align: right;
+	margin-top: 10%;
 
 }
 
 #english {
+	width: 150px;
 	color: #FFF;
 	font-family: 'Cinzel', serif;
 	font-weight: bold;
 	font-size: 45px; 
-	position: relative;
-	top: 35%;
-	left: 55%;
+	text-align: left;
 	letter-spacing: 2px;
+	/*margin-top: 2.5%;*/
 }
 #my-name {
 	color: #FFF;
 	font-family: 'Bad Script', cursive;
 	font-size: 25px;
-	position: relative;
-	top: 40%;
 	text-align: center;
 	line-height: 50px;
+	margin-top: 5%;
 }
 span {
 	font-family: 'Noto Sans Japanese', serif;
@@ -332,7 +334,7 @@ h3 {
 /***************************************/
 
 
-@media only screen and (max-width: 600px) { 
+@media only screen and (max-width: 650px) { 
 
 .mai-img {
 	/*margin: 20px;*/
@@ -353,8 +355,9 @@ h3 {
 	font-size: 50px;
 }
 
-
-
+.top-msg {
+	padding-top: 30%;
+}
 /***************************************/
 /********* For iPhone6 Landscape ********/
 /***************************************/
