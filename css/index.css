@@ -35,6 +35,7 @@ body {
 }
 
 #japanese {
+	width: 250px;
 	color: #FFF;
 	font-family: 'Noto Sans Japanese', serif;
 	font-weight: bold;
@@ -46,6 +47,7 @@ body {
 }
 
 #english {
+	width: 150px;
 	color: #FFF;
 	font-family: 'Cinzel', serif;
 	font-weight: bold;
