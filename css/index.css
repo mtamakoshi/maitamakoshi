@@ -87,6 +87,7 @@ span {
 }
 
 .mai {
+	width: 100%;
 	color: #605656;
 	font-size: 20px;
 	font-family: 'Josefin Sans', sans-serif;
@@ -212,7 +213,9 @@ h3 {
 	padding: 30px;
 	letter-spacing: 7px;
 }
-
+.skill-set {
+	width: 100%;
+}
 .skills {
 	width: 125px;
 	height: 125px;
@@ -228,7 +231,7 @@ h3 {
 	text-shadow:1px 1px #ccc, -1px -1px #fff;
 	box-shadow: 1px 1px #ccc, 1px 1px #fff;
 	float: left;
-	margin: 25px;
+	margin: 30px 25px;
 	  
 }
 .ruby {
