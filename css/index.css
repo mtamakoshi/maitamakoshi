@@ -336,6 +336,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ebe9', end
 
 @media only screen and (max-width: 600px) { 
 
+.mai {
+	font-size: 25px;
+	font-weight: 400;
+}
 .mai-img {
 	/*margin: 20px;*/
 	display: none;
