@@ -334,13 +334,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ebe9', end
 /***************************************/
 
 
-@media only screen and (max-width: 600px) { 
+@media only screen and (max-width:650px) { 
 
 .mai {
-	font-size: 25px;
+	font-size: 22px;
 	font-weight: 400;
 }
-.mai-img {
+
+p.mai-img {
 	/*margin: 20px;*/
 	display: none;
 }
@@ -359,7 +360,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ebe9', end
 	font-size: 50px;
 }
 
-
+}
 
 /***************************************/
 /********* For iPhone6 Landscape ********/
