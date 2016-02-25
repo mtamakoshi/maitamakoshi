@@ -5,6 +5,42 @@
 @import url("http://fonts.googleapis.com/css?family=Amatic+SC:400,700");
 @import url("http://fonts.googleapis.com/css?family=Cinzel:400,700");
 
+@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.fade-in.one {
+-webkit-animation-delay: 0.2s;
+-moz-animation-delay: 0.2s;
+animation-delay: 0.2s;
+}
+
+.fade-in.two {
+-webkit-animation-delay: 0.4s;
+-moz-animation-delay:0.4s;
+animation-delay: 0.4s;
+}
+
+.fade-in.three {
+-webkit-animation-delay: 0.7s;
+-moz-animation-delay: 0.7s;
+animation-delay: 0.7s;
+}
 * {margin: 0; padding: 0;}
 
 a {text-decoration: none;}
@@ -30,35 +66,36 @@ body {
 /* Screens Settings */
 #screen1 {	
 	height: 100vh;
-	background-image: url("../img/background2.png");
-	background-size: cover;
+	background-image: url("../img/bg-img-hello.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 #japanese {
 	width: 250px;
-	color: #FFF;
+	color: #ac7a93;
 	font-family: 'Noto Sans Japanese', serif;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	font-size: 40px;
 	position: relative;
-	top: 30%;
+	top: 40%;
 	left: 30%;
 
 }
 
 #english {
 	width: 150px;
-	color: #FFF;
+	color: #ac7a93;
 	font-family: 'Cinzel', serif;
-	font-weight: bold;
+	/*font-weight: bold;*/
 	font-size: 45px; 
 	position: relative;
-	top: 35%;
+	top: 38%;
 	left: 55%;
 	letter-spacing: 2px;
 }
 #my-name {
-	color: #FFF;
+	color: #60584F;
 	font-family: 'Bad Script', cursive;
 	font-size: 25px;
 	position: relative;
@@ -73,9 +110,10 @@ span {
 
 #screen2 {
 	background-color: #f6f6f6;	
+	/*margin: 100px 0;*/
 }
 
-.eff-1 .text {
+/*.eff-1 .text {
 	color:#eee;
 	font-size: 55px;
 	text-align: center;
@@ -85,7 +123,14 @@ span {
 	padding: 30px;
 	letter-spacing: 7px;
 }
-
+*/
+.about {
+	margin: 50px 0 100px 0;
+	height: 50vh;
+}
+.introduction {
+	margin-top: 100px;
+}
 .mai {
 	width: 100%;
 	color: #605656;
@@ -99,7 +144,7 @@ span {
 }
 
 .fa-heart {
-	color: #ff8da1;
+	color: #ac7a93;
 }
 
 .mai-img {
@@ -107,7 +152,7 @@ span {
 	float: right;
 	position: relative;
 	right: 5px;
-	top: -125px;
+	top: 0px;
 	border: 20px solid #FFF;
 }
 
@@ -124,24 +169,23 @@ span {
 }
 
 #screen3 {
-	/*background-color: #faf4ec;*/
-	background: rgba(246,246,246,1);
+	background-color: #FFF;
+/*	background: rgba(246,246,246,1);
 	background: -moz-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(250,244,236,1) 30%, rgba(250,244,236,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(246,246,246,1)), color-stop(30%, rgba(250,244,236,1)), color-stop(100%, rgba(250,244,236,1)));
 	background: -webkit-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(250,244,236,1) 30%, rgba(250,244,236,1) 100%);
 	background: -o-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(250,244,236,1) 30%, rgba(250,244,236,1) 100%);
 	background: -ms-linear-gradient(top, rgba(246,246,246,1) 0%, rgba(250,244,236,1) 30%, rgba(250,244,236,1) 100%);
 	background: linear-gradient(to bottom, rgba(246,246,246,1) 0%, rgba(250,244,236,1) 30%, rgba(250,244,236,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#faf4ec', GradientType=0 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#faf4ec', GradientType=0 );*/
 	padding-top: 30px;
 }
 
-.screenSan {
-	margin-top: 100px;
+.portfolio {
+	margin: 100px 0;
 }
-.portfolio{
+/*.portfolio{
 	color: #f1eae1;
-	/*color: black;*/
 	font-size: 55px;
 	text-align: center;
 	text-shadow:2px 2px #fff, -2px -2px #ccc;
@@ -149,10 +193,10 @@ span {
 	font-weight: 700;
 	padding: 30px;
 	letter-spacing: 7px;
-}
+}*/
 
 
-.carousel-caption {
+/*.carousel-caption {
 	font-family: 'Amatic SC', cursive;
 	color: #605658;
 	font-size: 30px;
@@ -160,12 +204,13 @@ span {
 .carousel-control.left, .carousel-control.right {
 	background-image: none;
 }
-
+*/
  .item-img {
- 	border: 3px solid #f1eae1;
-	border-radius: 15px;
-	width: 81%;
-	margin: auto;
+ 	/*border: 3px solid #f1eae1;*/
+	/*border-radius: 15px;*/
+	width: 100%;
+	padding: 0;
+	/*margin: auto;*/
 }
 
 .mypages {
@@ -186,16 +231,15 @@ h3 {
 }
 
 #screen4 {
-	/*background: #f4f0ed;*/
-	/*background-color: #f7ebe9;*/
-	background: rgba(250,244,236,1);
+	background: #f6f6f6;
+/*	background: rgba(250,244,236,1);
 	background: -moz-linear-gradient(top, rgba(250,244,236,1) 0%, rgba(250,244,236,1) 0%, rgba(244,233,236,1) 22%, rgba(244,233,236,1) 100%);
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(250,244,236,1)), color-stop(0%, rgba(250,244,236,1)), color-stop(22%, rgba(244,233,236,1)), color-stop(100%, rgba(244,233,236,1)));
 	background: -webkit-linear-gradient(top, rgba(250,244,236,1) 0%, rgba(250,244,236,1) 0%, rgba(244,233,236,1) 22%, rgba(244,233,236,1) 100%);
 	background: -o-linear-gradient(top, rgba(250,244,236,1) 0%, rgba(250,244,236,1) 0%, rgba(244,233,236,1) 22%, rgba(244,233,236,1) 100%);
 	background: -ms-linear-gradient(top, rgba(250,244,236,1) 0%, rgba(250,244,236,1) 0%, rgba(244,233,236,1) 22%, rgba(244,233,236,1) 100%);
 	background: linear-gradient(to bottom, rgba(250,244,236,1) 0%, rgba(250,244,236,1) 0%, rgba(244,233,236,1) 22%, rgba(244,233,236,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faf4ec', endColorstr='#f4e9ec', GradientType=0 );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#faf4ec', endColorstr='#f4e9ec', GradientType=0 );*/
 	padding-top: 30px;
  }	
 
@@ -203,60 +247,42 @@ h3 {
 	margin-top: 30px;
 }
 .resume {
-	color: #ece0e2;
+	color: #ac7a93;
 	/*color: black;*/
-	font-size: 55px;
+	font-size: 38px;
 	text-align: center;
-	text-shadow:2px 2px #fff, -2px -2px #ccc;
-	font-family: 'Amatic SC', cursive;
-	font-weight: 700;
+	/*text-shadow:2px 2px #fff, -2px -2px #ccc;*/
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
 	padding: 30px;
 	letter-spacing: 7px;
 }
 .skill-set {
-	width: 100%;
+	width: 75%;
+	margin: auto;
+	text-align: center;
 }
 .skills {
-	width: 125px;
-	height: 125px;
-	font-family: 'Amatic SC', cursive;
-	background-color: #deced2;
-	font-size: 50px;
-	font-weight: bold;
-	border: 2px solid #eee;
-	border-radius: 60px;
-	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #60584F;
+	font-size: 30px;
+	font-weight: 300;
+	display: inline-block;
 	padding-top: 33px;
-	color:#eee;
-	text-shadow:1px 1px #ccc, -1px -1px #fff;
-	box-shadow: 1px 1px #ccc, 1px 1px #fff;
-	float: left;
-	margin: 30px 25px;
+	margin: 10px;
 	  
-}
-.ruby {
-	font-size: 35px;
-	padding-top: 18px;
-}
-.js {
-	font-size: 35px;
-}
-.boostrap, .jq {
-	font-size: 45px;
-}
-.photoshop {
-	font-size: 40px;
 }
 
 #screen5 {
-	background: rgba(247,235,233,1);
+	background-color: #FFF;
+	/*background: rgba(247,235,233,1);
 background: -moz-linear-gradient(top, rgba(247,235,233,1) 0%, rgba(245,233,233,1) 0%, rgba(214,214,227,1) 100%);
 background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(247,235,233,1)), color-stop(0%, rgba(245,233,233,1)), color-stop(100%, rgba(214,214,227,1)));
 background: -webkit-linear-gradient(top, rgba(247,235,233,1) 0%, rgba(245,233,233,1) 0%, rgba(214,214,227,1) 100%);
 background: -o-linear-gradient(top, rgba(247,235,233,1) 0%, rgba(245,233,233,1) 0%, rgba(214,214,227,1) 100%);
 background: -ms-linear-gradient(top, rgba(247,235,233,1) 0%, rgba(245,233,233,1) 0%, rgba(214,214,227,1) 100%);
 background: linear-gradient(to bottom, rgba(247,235,233,1) 0%, rgba(245,233,233,1) 0%, rgba(214,214,227,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ebe9', endColorstr='#d6d6e3', GradientType=0 );
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ebe9', endColorstr='#d6d6e3', GradientType=0 );*/
 	padding-top: 30px;
 
 }
@@ -265,13 +291,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ebe9', end
 	margin-top: 20px auto;
 }
 .contact {
-	color: #d6d6e3;
+	color: #ac7a93;
 	/*color: black;*/
-	font-size: 55px;
+	font-size: 38px;
 	text-align: center;
-	text-shadow:2px 2px #fff, -2px -2px #ccc;
-	font-family: 'Amatic SC', cursive;
-	font-weight: 700;
+	/*text-shadow:2px 2px #fff, -2px -2px #ccc;*/
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
 	padding: 30px;
 	letter-spacing: 7px;
 
@@ -289,20 +315,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7ebe9', end
 	margin: 15px;
 	font-family: 'Amatic SC', cursive;
 	font-size: 50px;
-	font-weight: bold;
+	font-weight: 300;
 	text-align: center;
-	/*padding-top: 33px;*/
-	color:#eee;
-	text-shadow:1px 1px #ccc, -1px -1px #fff;
-	/*box-shadow: 1px 1px #ccc, 1px 1px #fff;*/
+	color: #60584F;
 
 }
 .contactIcons .fa {
-	color: #d6d6e3;
-	/*color: black;*/
+	color: #60584F;
 	font-size: 55px;
 	text-align: center;
-	text-shadow:2px 2px #fff, -2px -2px #ccc;
+
 }
 
 
