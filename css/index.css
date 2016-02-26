@@ -25,22 +25,23 @@
 }
 
 .fade-in.one {
--webkit-animation-delay: 0.1s;
--moz-animation-delay: 0.1s;
-animation-delay: 0.1s;
+	-webkit-animation-delay: 0.1s;
+	-moz-animation-delay: 0.1s;
+	animation-delay: 0.1s;
 }
 
 .fade-in.two {
--webkit-animation-delay: 0.3s;
--moz-animation-delay:0.3s;
-animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+	-moz-animation-delay:0.3s;
+	animation-delay: 0.3s;
 }
 
 .fade-in.three {
--webkit-animation-delay: 0.5s;
--moz-animation-delay: 0.5s;
-animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	animation-delay: 0.5s;
 }
+
 * {margin: 0; padding: 0;}
 
 a {text-decoration: none;}
@@ -71,8 +72,6 @@ span.love {
 	color: #ff8e97;
 	font-family: 'Alegreya Sans SC', sans-serif;
 }
-/* Making invisible for waypoints */
-
 
 /* Screens Settings */
 #screen1 {	
@@ -103,12 +102,10 @@ span.love {
 }
 span {
 	font-family: 'Noto Sans Japanese', serif;
-
 }
 
 #screen2 {
-	/*background-color: #f6f6f6;	*/
-	/*background-color: #ff8e97;*/
+
 }
 
 .about {
@@ -168,7 +165,7 @@ li.three-things-li {
 }
 
 .mai-img {
- width: 150px;
+ 	width: 150px;
 }
 
 .introduction  {
@@ -179,7 +176,8 @@ li.three-things-li {
 
 #screen3 {
 	background-color: #FFF;
-	padding-top: 30px;
+	height: 100vh;
+	/*padding-top: 30px;*/
 }
 
 .portfolio {
@@ -235,7 +233,7 @@ figure:hover figcaption {
 }
 
 #screen4 {
-	/*background: #f6f6f6;*/
+	height: 85vh;
 	padding-top: 30px;
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight: 100;
@@ -247,11 +245,13 @@ figure:hover figcaption {
 }
 .tech-skill {
 	color: #ff8e97;
-	/*color: black;*/
 	font-size: 40px;
 	text-align: center;
 	padding: 30px;
-	letter-spacing: 7px;
+	letter-spacing: 3px;
+}
+.tech-icons {
+	margin-top: 75px;
 }
 .skill-set {
 	width: 75%;
@@ -266,9 +266,8 @@ figure:hover figcaption {
 }
 .skills {
 	color: #60584F;
-	font-size: 35px;
+	font-size: 30px;
 	display: inline-block;
-	padding-top: 33px;
 	margin: 10px;
 	  
 }
@@ -276,12 +275,12 @@ figure:hover figcaption {
 #screen5 {
 	background-color: #fafafa;
 	padding-top: 30px;
-
 }
 
 .contact-info {
 	margin-top: 20px auto;
 }
+
 .contact {
 	color: #ff8e97;
 	font-size: 40px;
@@ -289,7 +288,7 @@ figure:hover figcaption {
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight: 100;
 	padding: 30px;
-	letter-spacing: 7px;
+	letter-spacing: 3px;
 }
 
 .contactList {
@@ -302,9 +301,6 @@ figure:hover figcaption {
 	height: 100px;
 	display: inline;
 	margin: 15px;
-	font-family: 'Alegreya Sans SC', sans-serif;
-	font-size: 50px;
-	font-weight: 100;
 	text-align: center;
 	color: #60584F;
 
@@ -316,9 +312,7 @@ figure:hover figcaption {
 
 }
 
-
-/************************************* Media Query **************************************/
-
+/******************* Media Query **************************/
 /********************************/
 /*** For iPad in Portrait *****/
 /*******************************/
@@ -337,23 +331,63 @@ figure:hover figcaption {
 /********* For iPhone6 Portrait ********/
 /***************************************/
 @media only screen and (max-width:650px) { 
-
-.mai {
-	font-size: 22px;
-	font-weight: 400;
+.my-name {
+	font-size: 25px;
+	position: relative;
+	top: 40%;
+}
+.my-title {
+	font-size: 15px;
+	top: 40%;
+}
+#screen2 {
+	margin-top: 30px;
+}
+.about {
+	margin: 5px 0;
+	height: auto;
+}
+.three-things p {
+	font-size: 30px;
 }
 
-p.mai-img {
-	/*margin: 20px;*/
-	display: none;
-}
-.skills {
+li.three-things-li {
 	width: 75px;
 	height: 75px;
-	padding-top: 25px;
-	font-size: 20px;
-	margin: 15px 20px;
+	border-radius: 80px;
+	background-color: #ff8e97;
+	color: #FFF;
+	font-size: 10px;
+	padding-top: 11px;
+	text-align: center;
+	display: inline-block;
+	margin:  10px;
+}
 
+.introduction {
+	margin-top: 20px;
+}
+
+.mai {
+	font-size: 15px;
+	font-weight: 300;
+	padding: 10px;
+}
+#screen3 {
+	height: 50vh;
+}
+.portfolio {
+	margin: 50px 0;
+}
+figure {
+	font-size: 20px;
+}
+#screen4 {
+	padding-top: 0;
+	height: 75vh;
+}
+.tech-skill {
+	font-size: 16px;
 }
 .ruby {
 	padding-top: 10px;
@@ -361,8 +395,27 @@ p.mai-img {
 .titles, .about {
 	font-size: 50px;
 }
+.skill-set-title {
+	font-size: 13.5px;
+}
 .skills {
-	margin: 30px 15px;
+	font-size: 11px;
+	/*padding-top: 10px;*/
+	margin: 5px;
+}
+.contact {
+	font-size: 16px;
+}
+.contactIcons {
+	width: 75px;
+	height: 75px;
+	margin: 15px;
+	font-size: 50px;
+}
+.contactIcons .fa {
+	color: #60584F;
+	font-size: 30px;
+	text-align: center;
 }
 
 }
