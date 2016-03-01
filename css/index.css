@@ -146,8 +146,8 @@ ul.three-things-ul {
 	width: 100%;
 }
 li.three-things-li {
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	height: 100px;
 	border-radius: 80px;
 	background-image: url("../img/circle.png");
 	background-repeat: no-repeat;
@@ -159,7 +159,7 @@ li.three-things-li {
 	padding-top: 30px;
 	text-align: center;
 	display: inline-block;
-	margin:  30px 50px;
+	margin:  30px 40px;
 }
 .skill-icon {
 	font-size: 40px;
