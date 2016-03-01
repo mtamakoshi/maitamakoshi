@@ -146,8 +146,8 @@ ul.three-things-ul {
 	width: 100%;
 }
 li.three-things-li {
-	width: 100px;
-	height: 100px;
+	width: 125px;
+	height: 125px;
 	border-radius: 80px;
 	background-image: url("../img/circle.png");
 	background-repeat: no-repeat;
@@ -155,8 +155,8 @@ li.three-things-li {
 
 	/*background-color: #ff8e97;*/
 	color: #FFF;
-	font-size: 18px;
-	padding-top: 30px;
+	font-size: 16px;
+	padding-top: 25px;
 	text-align: center;
 	display: inline-block;
 	margin:  30px 40px;
