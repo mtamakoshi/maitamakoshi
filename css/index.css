@@ -5,6 +5,7 @@
 @import url("http://fonts.googleapis.com/css?family=Amatic+SC:400,700");
 @import url("http://fonts.googleapis.com/css?family=Cinzel:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,100,700,100italic");
+
 @-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
@@ -44,8 +45,12 @@
 
 * {margin: 0; padding: 0;}
 
-a {text-decoration: none;}
-
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
 /* This class is added on scroll */
 .fixed {
 	position: fixed; 
@@ -107,10 +112,12 @@ span.love {
 
 /* Screens Settings */
 #screen1 {	
+	width: 80%;
+	margin: 0 10%;
 	height: 100vh;
-	background-image: url("../img/back-img-hello-2.png");
+	background-image: url("../img/water-flower-2.png");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 100%
 }
 .my-name {
 	color: #60584F;
@@ -118,7 +125,7 @@ span.love {
 	font-weight: 100;
 	font-size: 55px;
 	position: relative;
-	top: 68%;
+	top: 25%;
 	text-align: center;
 	line-height: 50px;
 	margin-top: 5%;
@@ -131,7 +138,7 @@ span.love {
 	text-align: center;
 	line-height: 55px;
 	position: relative;
-	top: 70%;
+	top: 30%;
 }
 span {
 	font-family: 'Noto Sans Japanese', serif;
@@ -162,7 +169,11 @@ li.three-things-li {
 	width: 150px;
 	height: 150px;
 	border-radius: 80px;
-	background-color: #ff8e97;
+	background-image: url("../img/circle.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+	/*background-color: #ff8e97;*/
 	color: #FFF;
 	font-size: 18px;
 	padding-top: 30px;
@@ -209,7 +220,7 @@ li.three-things-li {
 
 #screen3 {
 	background-color: #FFF;
-	height: 100vh;
+	height: 100%;
 	/*padding-top: 30px;*/
 }
 
@@ -243,20 +254,46 @@ figcaption.pnk {
 	z-index: 2;
 	width: 100%;
 	height: 100%;
-	background: rgba(255, 168, 168,.7);
+	background: rgba(241, 130, 163,.5);
 	color: #FFF;
 	-webkit-transition: .3s;
 	transition: .3s;
 	opacity: 1;
 }
-figcaption.gry {
+figcaption.org {
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 2;
 	width: 100%;
 	height: 100%;
-	background: rgba(214, 214, 214,.8);
+	background: rgba(254, 205, 198,.8);
+	color: #FFF;
+	-webkit-transition: .3s;
+	transition: .3s;
+	opacity: 1;
+}
+figcaption.grn {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(198, 214, 213,.8);
+	color: #FFF;
+	-webkit-transition: .3s;
+	transition: .3s;
+	opacity: 1;
+}
+figcaption.blu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background: rgba(186, 194, 225,.8);
 	color: #FFF;
 	-webkit-transition: .3s;
 	transition: .3s;
@@ -271,22 +308,28 @@ figure:hover figcaption {
 }
 
 #screen4 {
-	height: 85vh;
-	padding-top: 30px;
+	height: auto;
+	/*height: 85vh;*/
+	/*padding-top: 30px;*/
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight: 100;
  }	
 
 .tech {
-	margin: 30px 0;
+	margin: 70px auto;
 
 }
 .tech-skill {
+	width: 30%;
+	margin: 60px 35% 0 35%;
 	color: #ff8e97;
 	font-size: 40px;
 	text-align: center;
 	padding: 30px;
 	letter-spacing: 3px;
+	background-image: url("../img/title-back.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 .tech-icons {
 	margin-top: 75px;
@@ -312,21 +355,25 @@ figure:hover figcaption {
 
 #screen5 {
 	background-color: #fafafa;
-	padding-top: 30px;
 }
 
 .contact-info {
-	margin-top: 20px auto;
+	margin-top: 30px auto;
 }
 
 .contact {
+	width: 30%;
+	margin: 60px 35% 0 35%;
 	color: #ff8e97;
-	font-size: 40px;
+	font-size: 35px;
 	text-align: center;
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight: 100;
 	padding: 30px;
-	letter-spacing: 3px;
+	letter-spacing: 1px;
+	background-image: url("../img/title-back.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
 }
 
 .contactList {
@@ -372,11 +419,11 @@ figure:hover figcaption {
 .my-name {
 	font-size: 25px;
 	position: relative;
-	top: 40%;
+	top: 5%;
 }
 .my-title {
 	font-size: 15px;
-	top: 40%;
+	top: 10%;
 }
 #screen2 {
 	margin-top: 30px;
@@ -428,14 +475,20 @@ figure {
 	padding-top: 0;
 	height: 75vh;
 }
+.tech {
+	margin: 50px auto;
+}
 .tech-skill {
+	width: 50%;
+	margin: 30px 25%;
 	font-size: 16px;
+	font-weight: 400;
 }
 .ruby {
 	padding-top: 10px;
-}
-.titles, .about {
-	font-size: 50px;
+} 
+.about {
+	font-size: 30px;
 }
 .skill-set-title {
 	font-size: 13.5px;
@@ -445,8 +498,14 @@ figure {
 	/*padding-top: 10px;*/
 	margin: 5px;
 }
+.tech-icons {
+	margin-top: 30px;
+}
 .contact {
+	width: 50%;
+	margin: 30px 25%;
 	font-size: 16px;
+	font-weight: 400;
 }
 .contactIcons {
 	width: 75px;
