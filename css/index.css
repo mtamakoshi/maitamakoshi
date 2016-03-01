@@ -73,27 +73,7 @@ body {
 .top-msg {
 	padding-top: 7%;
 }
-#japanese {
-	/*width: 250px;*/
-	color: #FFF;
-	font-family: 'Noto Sans Japanese', serif;
-	font-weight: bold;
-	font-size: 40px;
-	text-align: right;
-	margin-top: 10%;
 
-}
-
-#english {
-	width: 150px;
-	color: #FFF;
-	font-family: 'Cinzel', serif;
-	font-weight: bold;
-	font-size: 45px; 
-	text-align: left;
-	letter-spacing: 2px;
-	/*margin-top: 2.5%;*/
-}
 #my-name {
 	color: #FFF;
 	font-family: 'Bad Script', cursive;
@@ -393,10 +373,50 @@ figure:hover figcaption {
 
 /******************* Media Query **************************/
 /********************************/
-/*** For iPad in Portrait *****/
+/*** For iPad miniin Portrait *****/
 /*******************************/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
-
+.my-name {
+	font-size: 30px;
+	position: relative;
+	top: 8%;
+}
+.my-title {
+	font-size: 23px;
+	top: 5%;
+}
+.three-things p {
+	font-size: 30px;
+}
+li.three-things-li {
+	width: 125px;
+	height: 125px;
+	border-radius: 80px;
+	background-color: #ff8e97;
+	color: #FFF;
+	font-size: 15px;
+	padding-top: 20px;
+	text-align: center;
+	display: inline-block;
+	margin: 10px 40px;
+}
+.tech-skill {
+	width: 30%;
+	margin: 30px 35%;
+	padding: 0;
+	font-size: 30px;
+	font-weight: 400;
+}
+.contact {
+	width: 30%;
+	margin: 30px 35%;
+	padding: 0;
+	font-size: 25px;
+	font-weight: 400;
+}
+#screen5 {
+	height: 50vh;
+}
 }
 
 /********************************/
@@ -405,19 +425,26 @@ figure:hover figcaption {
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
 
 }
-
 /**************************************
 /********* For iPhone6 Portrait ********/
 /***************************************/
-@media only screen and (max-width:650px) { 
+@media only screen and (max-device-width:377px) and (min-device-width: 320px) { 
+#screen1 {
+	width: 80%;
+	margin: 0 10%;
+	height: 100vh;
+	background-image: url("../img/back-long.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
 .my-name {
 	font-size: 25px;
 	position: relative;
-	top: 5%;
+	top: 15%;
 }
 .my-title {
-	font-size: 15px;
-	top: 10%;
+	font-size: 13px;
+	top: 15%;
 }
 #screen2 {
 	margin-top: 30px;
@@ -427,9 +454,11 @@ figure:hover figcaption {
 	height: auto;
 }
 .three-things p {
-	font-size: 30px;
+	font-size: 20px;
 }
-
+ul.three-things-ul {
+	width: 100%;
+}
 li.three-things-li {
 	width: 75px;
 	height: 75px;
@@ -442,7 +471,7 @@ li.three-things-li {
 	display: inline-block;
 	margin:  10px;
 }
-@media only screen and (max-width: 650px) { 
+
 .introduction {
 	margin-top: 20px;
 }
@@ -475,6 +504,130 @@ figure {
 .tech-skill {
 	width: 50%;
 	margin: 30px 25%;
+	padding:0;
+	font-size: 16px;
+	font-weight: 400;
+}
+.ruby {
+	padding-top: 10px;
+} 
+.about {
+	font-size: 30px;
+}
+.skill-set-title {
+	font-size: 12.5px;
+}
+.skills {
+	font-size: 11px;
+	/*padding-top: 10px;*/
+	margin: 5px;
+}
+.tech-icons {
+	margin-top: 30px;
+}
+.contact {
+	width: 50%;
+	margin: 30px 25%;
+	padding: 0;
+	font-size: 16px;
+	font-weight: 400;
+	background-size: cover;
+}
+.contactIcons {
+	width: 75px;
+	height: 75px;
+	margin: 15px;
+	font-size: 50px;
+}
+.contactIcons .fa {
+	color: #60584F;
+	font-size: 30px;
+	text-align: center;
+}
+.top-msg {
+	padding-top: 30%;
+}
+}
+/**************************************
+/********* For iPhone6Plus Portrait ********/
+/***************************************/
+@media only screen and (max-device-width:670px) and (min-device-width: 376px)  { 
+#screen1 {
+	width: 80%;
+	margin: 0 10%;
+	height: 100vh;
+	background-image: url("../img/back-long.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.my-name {
+	font-size: 25px;
+	position: relative;
+	top: 5%;
+}
+.my-title {
+	font-size: 15px;
+	top: 10%;
+}
+#screen2 {
+	margin-top: 30px;
+}
+.about {
+	margin: 5px 0;
+	height: auto;
+}
+.three-things p {
+	font-size: 20px;
+}
+ul.three-things-ul {
+	width: 100%;
+}
+li.three-things-li {
+	width: 75px;
+	height: 75px;
+	border-radius: 80px;
+	background-color: #ff8e97;
+	color: #FFF;
+	font-size: 10px;
+	padding-top: 11px;
+	text-align: center;
+	display: inline-block;
+	margin:  10px 15px;
+}
+
+.introduction {
+	margin-top: 20px;
+}
+p.mai-img {
+	/*margin: 20px;*/
+	display: none;
+}
+
+.mai {
+	font-size: 15px;
+	font-weight: 300;
+	padding: 10px;
+}
+#screen3 {
+	height: 50vh;
+}
+.portfolio {
+	margin: 50px 0;
+}
+figure {
+	font-size: 20px;
+}
+#screen4 {
+	padding-top: 0;
+	height: 75vh;
+}
+.tech {
+	margin: 50px auto;
+}
+.tech-skill {
+	width: 40%;
+	margin: 30px 30%;
+	padding: 0;
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -496,8 +649,9 @@ figure {
 	margin-top: 30px;
 }
 .contact {
-	width: 50%;
-	margin: 30px 25%;
+	width: 40%;
+	margin: 30px 30%;
+	padding: 0;
 	font-size: 16px;
 	font-weight: 400;
 }
