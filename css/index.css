@@ -147,18 +147,18 @@ ul.three-things-ul {
 	margin: 0 10%;
 }
 li.three-things-li {
-	width: 150px;
-	height: 150px;
+	width: 125px;
+	height: 125px;
 	border-radius: 80px;
 	background-image: url("../img/circle.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	color: #FFF;
-	font-size: 18px;
-	padding-top: 30px;
+	font-size: 16px;
+	padding-top: 25px;
 	text-align: center;
 	display: inline-block;
-	margin:  30px 15px;
+	margin:  30px 40px;
 }
 .skill-icon {
 	font-size: 40px;
