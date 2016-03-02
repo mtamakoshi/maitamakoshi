@@ -143,7 +143,8 @@ span {
 	color: #ff8e97;;
 }
 ul.three-things-ul {
-	width: 100%;
+	width: 80%;
+	margin: 0 10%;
 }
 li.three-things-li {
 	width: 150px;
@@ -152,14 +153,12 @@ li.three-things-li {
 	background-image: url("../img/circle.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
-
-	/*background-color: #ff8e97;*/
 	color: #FFF;
 	font-size: 18px;
 	padding-top: 30px;
 	text-align: center;
 	display: inline-block;
-	margin:  30px 50px;
+	margin:  30px 15px;
 }
 .skill-icon {
 	font-size: 40px;
@@ -372,8 +371,241 @@ figure:hover figcaption {
 }
 
 /******************* Media Query **************************/
+/* For PC */
+
+@media screen and (max-width: 1200px)  { 
+
+	.my-name {
+		font-size: 40px;
+		top: 18%;
+	}
+	.my-title {
+		font-size: 25px;
+		top: 15%;
+	}
+	.three-things p {
+	font-size: 35px;
+	}
+
+	li.three-things-li {
+		width: 125px;
+		height: 125px;
+		color: #FFF;
+		font-size: 18px;
+		padding-top: 11px;
+		margin: 7px;
+	}
+	figure {
+		font-size: 25px;
+	}
+	.tech-skill, .contact{
+		font-size: 30px;
+
+	}
+}
+@media screen and (max-width: 1050px) { 
+
+	.my-name {
+		font-size: 40px;
+		top: 15%;
+	}
+	.my-title {
+		font-size: 25px;
+		top: 12.5%;
+	}
+}
+/*@media screen and (max-width: 950px) { 
+
+	.my-name {
+		font-size: 40px;
+		top: 13%;
+	}
+	.my-title {
+		font-size: 25px;
+		top: 10%;
+	}
+}*/
+
+@media screen and (max-width: 850px) { 
+	#screen1 {
+		height: 80vh;
+	}
+	.my-name {
+		font-size: 40px;
+		top: 10%;
+	}
+	.my-title {
+		font-size: 25px;
+		top: 12%;
+	}
+	li.three-things-li {
+		width: 115px;
+		height: 115px;
+		font-size: 15px;
+		padding-top: 15px;
+		margin: 25px;
+	}
+
+}
+@media screen and (max-width: 750px) { 
+	#screen1 {
+		height: 70vh;
+	}
+	.my-name {
+		font-size: 35px;
+		top: 10%;
+	}
+	.my-title {
+		font-size: 22px;
+		top: 6%;
+	}
+	li.three-things-li {
+		width: 125px;
+		height: 125px;
+		font-size: 15px;
+		padding-top: 15px;
+		margin: 10px;
+	}
+	.tech-skill, .contact{
+		width: 50%;
+		margin: 50px 25% 0 25%;
+		font-size: 30px;
+		padding: 0;
+	}
+	.tech {
+		margin: 30px auto;
+	}
+	.skill-set-title, .skills {
+		font-size: 18px;
+	}
+	.contactIcons {
+		font-size: 20px;
+	}
+
+}
+@media screen and (max-width: 650px) { 
+	#screen1 {
+		height: 65vh;
+	}
+	.my-name {
+		font-size: 30px;
+		top: 8%;
+	}
+	.my-title {
+		font-size: 16px;
+		top: 3%;
+	}
+	li.three-things-li {
+		width: 125px;
+		height: 125px;
+		font-size: 18px;
+		padding-top: 11px;
+		margin: 1px;
+	}
+
+}
+@media screen and (max-width: 550px) { 
+	#screen1 {
+		height: 60vh;
+	}
+	.my-name {
+		font-size: 30px;
+		top: 8%;
+	}
+	.my-title {
+		font-size: 16px;
+		top: 3%;
+	}
+	li.three-things-li {
+		width: 100px;
+		height: 100px;
+		color: #FFF;
+		font-size: 13px;
+		padding-top: 15px;
+		margin: 5px;
+	}
+
+}
+
+@media screen and (max-width: 500px) { 
+	#screen1 {
+		height: 50vh;
+	}
+	.my-name {
+		font-size: 25px;
+		top: 5%;
+	}
+	.my-title {
+		font-size: 15px;
+		top: 1%;
+	}
+
+}
+@media screen and (max-width: 500px) { 
+	#screen1 {
+		height: 50vh;
+	}
+	.my-name {
+		font-size: 25px;
+		top: 5%;
+	}
+	.my-title {
+		font-size: 15px;
+		top: -10px;
+	}
+
+}
+
+@media screen and (max-width: 400px) { 
+	#screen1 {
+		height: 40vh;
+	}
+	.my-name {
+		font-size: 25px;
+		top: 3%;
+	}
+	.my-title {
+		font-size: 13px;
+		top: -20px;
+	}
+	.about {
+		height: 20vh;
+	}
+	.about-2 {
+		height: 50vh;
+		font-size: 15px;
+	}
+	.three-things p {
+		font-size: 30px
+	}
+	li.three-things-li {
+		width: 80px;
+		height: 80px;
+		font-size: 11px;
+		padding-top: 10px;
+		margin: 10px 3px;
+	}
+	figure {
+		font-size: 25px;
+	}
+	.tech-skill, .contact{
+		width: 70%;
+		margin: 50px 15% 0 15%;
+		font-size: 30px;
+		padding: 0;
+	}
+	.tech {
+		margin: 30px auto;
+	}
+	.skill-set-title, .skills {
+		font-size: 18px;
+	}
+	.contactIcons {
+		font-size: 20px;
+	}
+}
 /********************************/
-/*** For iPad miniin Portrait *****/
+/*** For iPad mini Portrait *****/
 /*******************************/
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
 .my-name {
@@ -389,8 +621,8 @@ figure:hover figcaption {
 	font-size: 30px;
 }
 li.three-things-li {
-	width: 125px;
-	height: 125px;
+	width: 100px;
+	height: 100px;
 	border-radius: 80px;
 	background-color: #ff8e97;
 	color: #FFF;
@@ -398,7 +630,7 @@ li.three-things-li {
 	padding-top: 20px;
 	text-align: center;
 	display: inline-block;
-	margin: 10px 40px;
+	margin: 10px 20px;
 }
 .tech-skill {
 	width: 30%;
@@ -419,12 +651,6 @@ li.three-things-li {
 }
 }
 
-/********************************/
-/*** For iPad in Landscape *****/
-/*******************************/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
-
-}
 /**************************************
 /********* For iPhone6 Portrait ********/
 /***************************************/
@@ -551,6 +777,7 @@ figure {
 /**************************************
 /********* For iPhone6Plus Portrait ********/
 /***************************************/
+
 @media only screen and (max-device-width:670px) and (min-device-width: 376px)  { 
 #screen1 {
 	width: 80%;
@@ -671,12 +898,4 @@ figure {
 }
 }
 
-/***************************************/
-/********* For iPhone6 Landscape ********/
-/***************************************/
-
-@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) { 
-
-
-}
 
