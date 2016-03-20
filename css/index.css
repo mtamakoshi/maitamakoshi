@@ -148,7 +148,7 @@ span {
 	color: #ff8e97;;
 }
 ul.three-things-ul {
-	width: 80%;
+	width: 100%;
 	margin: 0;
 }
 li.three-things-li {
@@ -164,7 +164,8 @@ li.three-things-li {
 	padding-top: 25px;
 	text-align: center;
 	display: inline-block;
-	margin:  30px 40px;
+	margin:  30px 8.5%;
+	/*align-content: center;*/
 }
 .skill-icon {
 	font-size: 40px;
@@ -795,7 +796,7 @@ body {
 #screen1 {
 	width: 80%;
 	margin: 0 10%;
-	height: 50vh;
+	height: 100vh;
 	background-image: url("../img/line-top3.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
