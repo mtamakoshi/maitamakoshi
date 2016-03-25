@@ -102,17 +102,20 @@ span.love {
 	background-size: cover;
 	border-bottom: 2.5px solid #FFF;
 }
+.name-title {
+	margin-top: 20%;
+}
 .my-name {
-	width: 80%;
+	/*width: 80%;*/
 	color: #60584F;
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-weight: 100;
 	font-size: 55px;
-	position: relative;
-	top: 40%;
 	text-align: center;
 	line-height: 50px;
-	margin: 5% 10% auto 10%;
+	/*margin-left: 10%;*/
+	position: relative;
+	top: 40%;
 }
 .my-title {
 	color: #ff8e97;
@@ -120,10 +123,10 @@ span.love {
 	font-weight: 100;
 	font-size: 30px;
 	text-align: center;
-	line-height: 55px;
-	position: relative;
-	top: 50%;
-	margin: auto 10%;
+	line-height: 50px;
+	/*position: relative;*/
+	/*top: 50%;*/
+	/*margin: auto 10%;*/
 }
 span {
 	font-family: 'Noto Sans Japanese', serif;
@@ -151,25 +154,19 @@ ul.three-things-ul {
 	width: 100%;
 	margin: 0;
 }
-li.three-things-li {
-	width: 125px;
+.three-things-li {
 	height: 125px;
-	border-radius: 80px;
-	background-color: #C3C6E0;
-	/*background-image: url("../img/circle.png");*/
-	/*background-repeat: no-repeat;*/
-	/*background-size: 100%;*/
-	color: #FFF;
+	color: #ff8e97;
 	font-size: 16px;
 	padding-top: 25px;
 	text-align: center;
-	display: inline-block;
-	margin:  30px 8.5%;
-	/*align-content: center;*/
+	margin-top: 40px;
 }
 .skill-icon {
 	font-size: 40px;
 	padding-bottom: 10px;
+	color: #6d6262;
+	text-align: center;
 }
 .skill-name {
 	font-size: 20px;
@@ -398,13 +395,10 @@ figure:hover figcaption {
 	font-size: 35px;
 	}
 
-	li.three-things-li {
-		width: 125px;
+	.three-things-li {
 		height: 125px;
-		color: #FFF;
 		font-size: 18px;
 		padding-top: 11px;
-		margin: 7px;
 	}
 	figure {
 		font-size: 25px;
@@ -449,12 +443,10 @@ figure:hover figcaption {
 		font-size: 25px;
 		top: 12%;
 	}
-	li.three-things-li {
-		width: 115px;
-		height: 115px;
+	.three-things-li {
+		height: 125px;
 		font-size: 15px;
 		padding-top: 15px;
-		margin: 25px;
 	}
 
 }
@@ -470,12 +462,10 @@ figure:hover figcaption {
 		font-size: 22px;
 		top: 6%;
 	}
-	li.three-things-li {
-		width: 125px;
+	.three-things-li {
 		height: 125px;
-		font-size: 15px;
+		font-size: 18px;
 		padding-top: 15px;
-		margin: 10px;
 	}
 	.tech-skill, .contact{
 		width: 50%;
@@ -506,12 +496,10 @@ figure:hover figcaption {
 		font-size: 16px;
 		top: 3%;
 	}
-	li.three-things-li {
-		width: 125px;
-		height: 125px;
-		font-size: 18px;
+	.three-things-li {
+		height: 115px;
+		font-size: 15px;
 		padding-top: 11px;
-		margin: 1px;
 	}
 
 }
@@ -527,13 +515,10 @@ figure:hover figcaption {
 		font-size: 16px;
 		top: 3%;
 	}
-	li.three-things-li {
-		width: 100px;
+	.three-things-li {
 		height: 100px;
-		color: #FFF;
-		font-size: 13px;
+		font-size: 15px;
 		padding-top: 15px;
-		margin: 5px;
 	}
 
 }
@@ -589,12 +574,10 @@ figure:hover figcaption {
 	.three-things p {
 		font-size: 30px
 	}
-	li.three-things-li {
-		width: 80px;
-		height: 80px;
-		font-size: 11px;
+	.three-things-li {
+		height: 90px;
+		font-size: 13px;
 		padding-top: 10px;
-		margin: 10px 3px;
 	}
 	figure {
 		font-size: 25px;
@@ -631,17 +614,10 @@ figure:hover figcaption {
 .three-things p {
 	font-size: 30px;
 }
-li.three-things-li {
-	width: 100px;
+.three-things-li {
 	height: 100px;
-	border-radius: 80px;
-/*	background-color: #C3C6E0;
-	color: #FFF;*/
 	font-size: 15px;
 	padding-top: 20px;
-	text-align: center;
-	display: inline-block;
-	margin: 10px 20px;
 }
 .tech-skill {
 	width: 30%;
@@ -696,17 +672,10 @@ li.three-things-li {
 ul.three-things-ul {
 	width: 100%;
 }
-li.three-things-li {
-	width: 75px;
-	height: 75px;
-	border-radius: 80px;
-/*	background-color: #ff8e97;
-	color: #FFF;*/
+.three-things-li {
+	height: 100px;
 	font-size: 10px;
 	padding-top: 11px;
-	text-align: center;
-	display: inline-block;
-	margin:  10px;
 }
 
 .introduction {
@@ -756,7 +725,6 @@ figure {
 }
 .skills {
 	font-size: 11px;
-	/*padding-top: 10px;*/
 	margin: 5px;
 }
 .tech-icons {
@@ -827,24 +795,16 @@ body {
 ul.three-things-ul {
 	width: 100%;
 }
-li.three-things-li {
-	width: 75px;
+.three-things-li {
 	height: 75px;
-	border-radius: 80px;
-/*	background-color: #ff8e97;
-	color: #FFF;*/
 	font-size: 10px;
 	padding-top: 11px;
-	text-align: center;
-	display: inline-block;
-	margin:  10px 15px;
 }
 
 .introduction {
 	margin-top: 20px;
 }
 p.mai-img {
-	/*margin: 20px;*/
 	display: none;
 }
 
@@ -887,7 +847,6 @@ figure {
 }
 .skills {
 	font-size: 11px;
-	/*padding-top: 10px;*/
 	margin: 5px;
 }
 .tech-icons {
