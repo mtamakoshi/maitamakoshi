@@ -13,6 +13,9 @@ body {
    font-weight: 100;
 }
 
+section {
+  background-color: #fcfcfc;
+}
 
 .row {
   width: 100%;
