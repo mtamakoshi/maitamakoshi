@@ -462,6 +462,10 @@ a {
 .top-sec-background {
   margin-top: 500px;
   background: url("../img/hello_new_cherry_xs.svg");
+  background-repeat: none;
+  background-size: cover;
+  padding: 0;
+  z-index: 0;
  }
 .todo-subject, .skill-subject, .getintouch-subject {
   margin-top: 150px;
