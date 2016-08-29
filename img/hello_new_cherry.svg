@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="433px" height="412px" viewBox="0 0 433 412" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.1 (12005) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <text id="hello" stroke="#74695E" stroke-width="3" sketch:type="MSTextLayer" font-family="yellow peas demo" font-size="60" font-weight="normal" sketch:alignment="middle" fill="#74695E">
+            <tspan x="151.75" y="67">hello</tspan>
+        </text>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(273.679184, 39.033210) scale(-1, 1) rotate(-21.000000) translate(-273.679184, -39.033210) translate(242.179184, 8.033210)">
+            <ellipse id="Oval-1" stroke="#D67B7B" stroke-width="2" fill="#EB8888" sketch:type="MSShapeGroup" cx="10.3995963" cy="40.3150289" rx="10.3995963" ry="10.4017341"></ellipse>
+            <ellipse id="Oval-1-Copy-2" stroke="#D67B7B" stroke-width="2" fill="#EB8888" sketch:type="MSShapeGroup" cx="45.2999363" cy="51.5982659" rx="10.3995963" ry="10.4017341"></ellipse>
+            <path d="M7.93073639,33.6676845 C7.12326551,35.6940307 9.09407598,37.7462746 12.3326648,38.2514995 L12.3326648,38.2514995" id="Oval-1-Copy" stroke="#E67777" stroke-width="2" sketch:type="MSShapeGroup" transform="translate(10.041228, 35.959592) rotate(13.000000) translate(-10.041228, -35.959592) "></path>
+            <path d="M43.0084998,44.3699422 C43.0084998,46.9015133 45.0603219,48.9537572 47.5913727,48.9537572 L47.5913727,48.9537572" id="Oval-1-Copy-3" stroke="#E67777" stroke-width="2" sketch:type="MSShapeGroup" transform="translate(45.299936, 46.661850) scale(-1, 1) translate(-45.299936, -46.661850) "></path>
+            <path d="M10.3995963,34.8235414 C27.1057444,34.8235414 36.2717104,18.3904818 39.4088514,3.58941474" id="Path-1" stroke="#74695E" stroke-width="3" sketch:type="MSShapeGroup"></path>
+            <path d="M30.3995963,39.8194143 C45.4989317,39.8194143 53.7833067,24.9669015 56.6187145,11.5894147" id="Path-1-Copy" stroke="#74695E" stroke-width="3" sketch:type="MSShapeGroup" transform="translate(43.509155, 25.704415) scale(-1, 1) rotate(-38.000000) translate(-43.509155, -25.704415) "></path>
+            <g transform="translate(43.445863, 14.873332) scale(-1, -1) rotate(-25.000000) translate(-43.445863, -14.873332) translate(38.445863, 1.373332)" sketch:type="MSShapeGroup">
+                <path d="M5.00394886,26.764572 C7.75808586,24.3505467 9.65536903,19.2725534 9.65536903,13.3988439 C9.65536903,7.5251345 7.75808586,2.44714115 5.00394886,0.0331158399 C2.24981186,2.44714115 0.352528687,7.5251345 0.352528687,13.3988439 C0.352528687,19.2725534 2.24981186,24.3505467 5.00394886,26.764572 Z" id="Oval-3" stroke="#B7C2AA" stroke-width="2" fill="#CAD7BC"></path>
+                <path d="M3.19068337,3.76842486 C3.19068337,5.92684101 3.88787936,7.79285481 4.89994402,8.67993839 L4.89994402,8.67993839" id="Oval-3-Copy-2" stroke="#C3CFB6"></path>
+                <path d="M4.92511123,3.97778179 C4.92511123,6.22820205 5.65202572,8.17375608 6.7072304,9.09865226 L6.7072304,9.09865226" id="Oval-3-Copy-7" stroke="#C3CFB6" transform="translate(5.816171, 6.538217) scale(-1, 1) translate(-5.816171, -6.538217) "></path>
+                <path d="M1.77160603,9.63041908 C1.97977503,13.5461675 3.18023089,16.7845165 4.74714772,18.1805564 L4.74714772,18.1805564" id="Oval-3-Copy-3" stroke="#C3CFB6"></path>
+                <path d="M1.77160603,14.8643425 C1.97467784,18.6842107 3.14573958,21.8432661 4.67428921,23.2051229 L4.67428921,23.2051229" id="Oval-3-Copy-8" stroke="#C3CFB6"></path>
+                <path d="M8.45849545,14.6549855 C8.25542363,18.4748537 7.08436189,21.6339092 5.55581227,22.9957659 L5.55581227,22.9957659" id="Oval-3-Copy-9" stroke="#C3CFB6"></path>
+                <path d="M4.76743597,6.49006503 C4.76743597,9.87949617 5.86226552,12.8097584 7.45154361,14.2027746 L7.45154361,14.2027746" id="Oval-3-Copy-6" stroke="#C3CFB6" transform="translate(6.109490, 10.346420) scale(-1, 1) translate(-6.109490, -10.346420) "></path>
+                <path d="M2.55998233,7.11813584 C2.55998233,10.0475465 3.50621938,12.5801075 4.8797974,13.7840607 L4.8797974,13.7840607" id="Oval-3-Copy-4" stroke="#C3CFB6"></path>
+                <path d="M8.30082019,9.63041908 C8.09774837,13.4502873 6.92668663,16.6093427 5.39813701,17.9711995 L5.39813701,17.9711995" id="Oval-3-Copy-5" stroke="#C3CFB6"></path>
+                <path d="M5.5,2.82631864 L5.5,23.2763194" id="Line" stroke="#C2D3AE" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

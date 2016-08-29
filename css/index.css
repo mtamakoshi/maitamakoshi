@@ -1,878 +1,500 @@
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
 @import url("https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100,300,100italic,400italic,500,700");
-/*@import url("https://fonts.googleapis.com/css?family=Bad+Script");*/
-/*@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,300");*/
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600");
-@import url("http://fonts.googleapis.com/css?family=Amatic+SC:400,700");
-@import url("http://fonts.googleapis.com/css?family=Cinzel:400,700");
-@import url("https://fonts.googleapis.com/css?family=Lato:400,100,700,100italic");
+@import url("https://fonts.googleapis.com/css?family=Sacramento");
 
-@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
-
-.fade-in {
-    opacity:0;  /* make things invisible upon start */
-    -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-    -moz-animation:fadeIn ease-in 1;
-    animation:fadeIn ease-in 1;
-
-    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-    -moz-animation-fill-mode:forwards;
-    animation-fill-mode:forwards;
-
-    -webkit-animation-duration:1s;
-    -moz-animation-duration:1s;
-    animation-duration:1s;
-}
-
-.fade-in.one {
-	-webkit-animation-delay: 0.1s;
-	-moz-animation-delay: 0.1s;
-	animation-delay: 0.1s;
-}
-
-.fade-in.two {
-	-webkit-animation-delay: 0.3s;
-	-moz-animation-delay:0.3s;
-	animation-delay: 0.3s;
-}
-
-.fade-in.three {
-	-webkit-animation-delay: 0.5s;
-	-moz-animation-delay: 0.5s;
-	animation-delay: 0.5s;
-}
-
-* {margin: 0; padding: 0;}
-
-a {
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: none;
-}
-/* This class is added on scroll */
-.fixed {
-	position: fixed; 
-	top: 0; 
-	height: 70px; 
-	z-index: 1;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 body {
-	color: #fff;
-	font-family:'Lato', sans-serif;
-	font-size: 20px;
-	margin: 0;
-	margin-top: -84px;
-	/*text-align: center;*/
-}
-.col-lg-6 {
-	padding: 0;
+   font-family: 'Alegreya Sans SC', sans-serif;
+   font-weight: 100;
 }
 
-/*.top-msg {
-	padding-top: 7%;
-}
-*/
-#my-name {
-	color: #FFF;
-	font-family: 'Bad Script', cursive;
-	font-size: 25px;
-}
-.bold {
-	font-size: 40px;
-	font-family: 'Alegreya Sans SC', sans-serif;
-}
-span.love {
-	color: #ff8e97;
-	font-family: 'Alegreya Sans SC', sans-serif;
-}
-/* Making invisible for waypoints */
 
-
-/* Screens Settings */
-#screen1 {	
-	width: 100%;
-	margin: 0;
-	height: 100vh;
-	/*background-color: black;*/
-	background-image: url("../img/line-top2.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-bottom: 2.5px solid #FFF;
-}
-.name-title {
-	margin-top: 20%;
-}
-.my-name {
-	/*width: 80%;*/
-	color: #60584F;
-	font-family: 'Alegreya Sans SC', sans-serif;
-	font-weight: 100;
-	font-size: 55px;
-	text-align: center;
-	line-height: 50px;
-	/*margin-left: 10%;*/
-	position: relative;
-	top: 40%;
-}
-.my-title {
-	color: #ff8e97;
-	font-family: 'Alegreya Sans SC', sans-serif;
-	font-weight: 100;
-	font-size: 30px;
-	text-align: center;
-	line-height: 50px;
-	/*position: relative;*/
-	/*top: 50%;*/
-	/*margin: auto 10%;*/
-}
-span {
-	font-family: 'Noto Sans Japanese', serif;
+.row {
+  width: 100%;
 }
 
-#screen2 {
+#top-sec {
+  width: 100%;
+  border: 25px solid #e2e0e5;
+}
+.top-sec-background {
+  margin-top: 30px;
+  background: url("../img/hello_new_cherry.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
 
 }
+ #my-name {
+  font-size: 50px;
+  color: #74695E;
+  text-align: center;
+  padding: 30px 0 0 0;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 100;
+}
+#my-title {
+  font-size: 45px;
+  color: #74695E;
+  text-align: center;
 
-.about {
-	margin: 20px 0;
-	height: 50vh;
 }
-.three-things p {
-	color: #605658;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	font-size: 50px;
-	text-align: center;
+.name-title-background {
+  margin-top: 75px;
+  margin-bottom: 100px;
+ }
+
+.profile {
+  margin-top: 75px;
+  margin-bottom: 100px;
 }
-.fa-heart-o {
-	color: #ff8e97;;
+
+h1 {
+  text-align: center;
+  font-size: 575%;
+  color: #74695E;
+  text-transform: uppercase;
+  letter-spacing: 1%;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 100;
 }
-ul.three-things-ul {
-	width: 100%;
-	margin: 0;
+
+.subject {
+  text-align: center;
+  font-size: 50px;
+  color: #74695E;
+  letter-spacing: 1%;
+  font-family: 'Poiret One', cursive;
+  margin-top: 5%;
+}
+
+#to-do {
+  border: 25px solid #F2EEC2;
+}
+
+.visible {
+  opacity: 1;
 }
 .three-things-li {
-	height: 125px;
-	color: #ff8e97;
-	font-size: 16px;
-	padding-top: 25px;
-	text-align: center;
-	margin-top: 40px;
+  margin-top: 5%;
+  font-size: 25px;
+  font-weight: 300;
+  text-align: center;
+  color: #74695E;
+
 }
 .skill-icon {
-	font-size: 40px;
-	padding-bottom: 10px;
-	color: #6d6262;
-	text-align: center;
+  color: #839a8f;
 }
-.skill-name {
-	font-size: 20px;
-	color: #FFF;
-}
-.introduction {
-	margin-top: 50px;
-}
-
 .mai {
-	width: 100%;
-	/*margin-top: 30px;*/
-	color: #605658;
-	font-size: 25px;
-	font-family: 'Alegreya Sans SC', sans-serif;
-	font-weight: 100;
-	padding: 40px;
-	line-height: 40px;
+  font-size: 20px;
+  margin-top: 5%;
 }
-
-.fa-heart {
-	color: #ff8e97;;
+#project {
+  width: 100%;
+  border: 25px solid #bac4ba;
 }
-
-.mai-img {
- 	width: 150px;
+.project {
+  border: 5px solid #FFB7B7;
+  border-radius: 5px;
+  height: 275px;
+  margin-top: 75px;
+  margin-bottom: 80px;
 }
-
-.introduction  {
-	margin-top: 50px;
-	padding: 20px;
-	/*text-align: center;*/
-}
-
-#screen3 {
-	background-color: #FFF;
-	height: 100%;
-	/*padding-top: 30px;*/
-}
-
-.portfolio {
-	margin: 100px 0;
-}
-figure {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	font-family: "Lato";
-	font-weight: 300;
-	font-size: 50px;
-}
-figure p {
-	position: relative;
-	top: 50%;
-	left: 20px;
-}
-
-figcaption.pnk {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	width: 100%;
-	height: 100%;
-	background: rgba(241, 130, 163,.5);
-	color: #FFF;
-	-webkit-transition: .3s;
-	transition: .3s;
-	opacity: 1;
-}
-figcaption.org {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	width: 100%;
-	height: 100%;
-	background: rgba(254, 205, 198,.8);
-	color: #FFF;
-	-webkit-transition: .3s;
-	transition: .3s;
-	opacity: 1;
-}
-figcaption.grn {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	width: 100%;
-	height: 100%;
-	background: rgba(198, 214, 213,.8);
-	color: #FFF;
-	-webkit-transition: .3s;
-	transition: .3s;
-	opacity: 1;
-}
-figcaption.blu {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 2;
-	width: 100%;
-	height: 100%;
-	background: rgba(186, 194, 225,.8);
-	color: #FFF;
-	-webkit-transition: .3s;
-	transition: .3s;
-	opacity: 1;
-}
-figure:hover figcaption {
-	opacity: 0;
-}
-.item-img {
-	width: 100%;
-	padding: 0;
-}
-
-#screen4 {
-	height: auto;
-	/*height: 85vh;*/
-	/*padding-top: 30px;*/
-	font-family: 'Alegreya Sans SC', sans-serif;
-	font-weight: 100;
- }	
-
-.tech {
-	margin: 70px auto;
+#project-intl {
+  background: url("../img/intlguest.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 
 }
-.tech-skill {
-	width: 30%;
-	margin: 60px 35% 0 35%;
-	color: #ff8e97;
-	font-size: 40px;
-	text-align: center;
-	padding: 30px;
-	letter-spacing: 3px;
-	/*background-image: url("../img/title-back.png");*/
-	/*background-size: 100%;*/
-	/*background-repeat: no-repeat;*/
+#project-dessin {
+  background: url("../img/dessinapp.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
-.tech-icons {
-	margin-top: 75px;
+#project-wedlog {
+  background: url("../img/wedlog.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
-.skill-set {
-	width: 75%;
-	margin: auto;
-	text-align: center;
+#project-discover {
+  background: url("../img/discovermycity.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
+.project-title {
+  width: 50%;
+  position: relative;
+  top: -35px;
+  font-size: 25px;
+  background-color: #FFF;
+  text-align: center;
+  font-weight: 300;
+}
+
+#skill-set {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  border: 25px solid #F3CBD0;
+  color:#74695E;
+}
+
+ .skill-list {
+  margin-top: 50px;
+  margin-bottom: 75px;
+ }
+
 .skill-set-title {
-	text-align: center;
-	color: #ff8e97;
-	font-size: 25px;
-	font-weight: 300;
-}
-.skills {
-	color: #60584F;
-	font-size: 30px;
-	display: inline-block;
-	margin: 10px;
-	  
+  margin-top: 5%;
+  font-size: 150%;
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  border-bottom: 3px solid #EFEBB8;
 }
 
-#screen5 {
-	background-color: #fafafa;
+.skills {
+  list-style-type: none;
+  text-align: center;
+  font-size: 25px;
+}
+
+#get-in-touch {
+  border: 25px solid #DDE9BD;
 }
 
 .contact-info {
-	margin-top: 30px auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
-
-.contact {
-	width: 30%;
-	margin: 60px 35% 0 35%;
-	color: #ff8e97;
-	font-size: 35px;
-	text-align: center;
-	font-family: 'Alegreya Sans SC', sans-serif;
-	font-weight: 100;
-	padding: 30px;
-	letter-spacing: 1px;
-/*	background-image: url("../img/title-back.png");
-	background-size: 100%;
-	background-repeat: no-repeat;*/
-}
-
 .contactList {
-	text-align: center;
-	margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .contactIcons {
-	width: 100px;
-	height: 100px;
-	display: inline;
-	margin: 15px;
-	text-align: center;
-	color: #60584F;
+  width: 100px;
+  height: 100px;
+  display: inline;
+  margin: 15px;
+  text-align: center;
+  color: #60584F;
 
 }
 
 .contactIcons .fa {
-	color: #60584F;
-	font-size: 55px;
-	text-align: center;
+  color: #60584F;
+  font-size: 55px;
+  text-align: center;
 
 }
 .contactIcons .fa:hover {
-	 color: #D7D7DA;
+   color: #D7D7DA;
 }
 
-/******************* Media Query **************************/
-/* For PC */
-
-@media screen and (max-width: 1200px)  { 
-
-	.my-name {
-		font-size: 40px;
-		top: 18%;
-	}
-	.my-title {
-		font-size: 25px;
-		top: 15%;
-	}
-	.three-things p {
-	font-size: 35px;
-	}
-
-	.three-things-li {
-		height: 125px;
-		font-size: 18px;
-		padding-top: 11px;
-	}
-	figure {
-		font-size: 25px;
-	}
-	.tech-skill, .contact{
-		font-size: 30px;
-
-	}
-}
-@media screen and (max-width: 1050px) { 
-
-	.my-name {
-		font-size: 40px;
-		top: 15%;
-	}
-	.my-title {
-		font-size: 25px;
-		top: 12.5%;
-	}
-}
-/*@media screen and (max-width: 950px) { 
-
-	.my-name {
-		font-size: 40px;
-		top: 13%;
-	}
-	.my-title {
-		font-size: 25px;
-		top: 10%;
-	}
-}*/
-
-@media screen and (max-width: 850px) { 
-	#screen1 {
-		height: 80vh;
-	}
-	.my-name {
-		font-size: 40px;
-		top: 10%;
-	}
-	.my-title {
-		font-size: 25px;
-		top: 12%;
-	}
-	.three-things-li {
-		height: 125px;
-		font-size: 15px;
-		padding-top: 15px;
-	}
-
-}
-@media screen and (max-width: 750px) { 
-	#screen1 {
-		height: 70vh;
-	}
-	.my-name {
-		font-size: 35px;
-		top: 10%;
-	}
-	.my-title {
-		font-size: 22px;
-		top: 6%;
-	}
-	.three-things-li {
-		height: 125px;
-		font-size: 18px;
-		padding-top: 15px;
-	}
-	.tech-skill, .contact{
-		width: 50%;
-		margin: 50px 25% 0 25%;
-		font-size: 30px;
-		padding: 0;
-	}
-	.tech {
-		margin: 30px auto;
-	}
-	.skill-set-title, .skills {
-		font-size: 18px;
-	}
-	.contactIcons {
-		font-size: 20px;
-	}
-
-}
-@media screen and (max-width: 650px) { 
-	#screen1 {
-		height: 65vh;
-	}
-	.my-name {
-		font-size: 30px;
-		top: 8%;
-	}
-	.my-title {
-		font-size: 16px;
-		top: 3%;
-	}
-	.three-things-li {
-		height: 115px;
-		font-size: 15px;
-		padding-top: 11px;
-	}
-
-}
-@media screen and (max-width: 550px) { 
-	#screen1 {
-		height: 60vh;
-	}
-	.my-name {
-		font-size: 30px;
-		top: 8%;
-	}
-	.my-title {
-		font-size: 16px;
-		top: 3%;
-	}
-	.three-things-li {
-		height: 100px;
-		font-size: 15px;
-		padding-top: 15px;
-	}
-
+a {
+  color: #60584F;
+;
 }
 
-@media screen and (max-width: 500px) { 
-	#screen1 {
-		height: 50vh;
-	}
-	.my-name {
-		font-size: 25px;
-		top: 5%;
-	}
-	.my-title {
-		font-size: 15px;
-		top: 1%;
-	}
 
+/*--- Start Parallax ---*/
+.parallax-top {
+    background: url("../img/pineapple_new.svg")  repeat fixed 100%;
 }
-@media screen and (max-width: 500px) { 
-	#screen1 {
-		height: 50vh;
-	}
-	.my-name {
-		font-size: 25px;
-		top: 5%;
-	}
-	.my-title {
-		font-size: 15px;
-		top: -10px;
-	}
-
+.parallax {
+  background: url("../img/watermelon_new.svg") repeat fixed 100%;
+}
+.parallax-middle {
+   background: url("../img/grapefruit_new.svg") repeat fixed 100%;
+}
+.parallax-bottom {
+   background: url("../img/kiwi_new.svg") repeat fixed 100%;
 }
 
-@media screen and (max-width: 400px) { 
-	#screen1 {
-		height: 40vh;
-	}
-	.my-name {
-		font-size: 25px;
-		top: 3%;
-	}
-	.my-title {
-		font-size: 13px;
-		top: -20px;
-	}
-	.about {
-		height: 20vh;
-	}
-	.about-2 {
-		height: 50vh;
-		font-size: 15px;
-	}
-	.three-things p {
-		font-size: 30px
-	}
-	.three-things-li {
-		height: 90px;
-		font-size: 13px;
-		padding-top: 10px;
-	}
-	figure {
-		font-size: 25px;
-	}
-	.tech-skill, .contact{
-		width: 70%;
-		margin: 50px 15% 0 15%;
-		font-size: 30px;
-		padding: 0;
-	}
-	.tech {
-		margin: 30px auto;
-	}
-	.skill-set-title, .skills {
-		font-size: 18px;
-	}
-	.contactIcons {
-		font-size: 20px;
-	}
-}
-/********************************/
-/*** For iPad mini Portrait *****/
-/*******************************/
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
-.my-name {
-	font-size: 30px;
-	position: relative;
-	top: 8%;
-}
-.my-title {
-	font-size: 23px;
-	top: 5%;
-}
-.three-things p {
-	font-size: 30px;
-}
-.three-things-li {
-	height: 100px;
-	font-size: 15px;
-	padding-top: 20px;
-}
-.tech-skill {
-	width: 30%;
-	margin: 30px 35%;
-	padding: 0;
-	font-size: 30px;
-	font-weight: 400;
-}
-.contact {
-	width: 30%;
-	margin: 30px 35%;
-	padding: 0;
-	font-size: 25px;
-	font-weight: 400;
-}
-#screen5 {
-	height: 50vh;
-}
+.parallax-inner, .parallax-top-inner, .parallax-middle-inner, .parallax-bottom-inner {
+  padding: 20% 0;
 }
 
-/**************************************
-/********* For iPhone6 Portrait ********/
-/***************************************/
-@media only screen and (max-device-width:377px) and (min-device-width: 320px) { 
-#screen1 {
-	width: 80%;
-	margin: 0 10%;
-	height: 100vh;
-	/*background-image: url("../img/back-long.png");*/
-	/*background-size: 100%;*/
-	/*background-repeat: no-repeat;*/
-}
-.my-name {
-	font-size: 25px;
-	position: relative;
-	top: 20%;
-}
-.my-title {
-	font-size: 13px;
-	top: 15%;
-}
-#screen2 {
-	margin-top: 30px;
-}
-.about {
-	margin: 5px 0;
-	height: auto;
-}
-.three-things p {
-	font-size: 20px;
-}
-ul.three-things-ul {
-	width: 100%;
-}
-.three-things-li {
-	height: 100px;
-	font-size: 10px;
-	padding-top: 11px;
-}
+/*--- End Parallax ---*/
 
-.introduction {
-	margin-top: 20px;
-}
-p.mai-img {
-	/*margin: 20px;*/
-	display: none;
-}
 
-.mai {
-	font-size: 15px;
-	font-weight: 300;
-	padding: 10px;
+/*--- Start Media Query ---*/
+@media(max-width:767px){
+
+.fa-3x {
+    font-size: 1em;
+  }
+#my-name {
+    font-size: 25px;
+    margin: 15px 0;
+  }
+#my-title {
+    font-size: 18px;
+  }
+.top-sec-background {
+  height: 125px;
+  margin-top: 175px;
+  }
+.name-title-background {
+  margin-top: 25px;
+  margin-bottom: 125px;
 }
-#screen3 {
-	height: 50vh;
+.todo-subject, .skill-subject, .getintouch-subject {
+  margin-top: 50px;
+ }
+ .subject {
+  font-size: 30px;
+ }
+.project-subject {
+  margin-top: 50px;
+ }
+
+#project {
+   width: 100%;
 }
-.portfolio {
-	margin: 50px 0;
+.project-title {
+  font-size: 20px;
+  top: -28px;
 }
-figure {
-	font-size: 20px;
-}
-#screen4 {
-	padding-top: 0;
-	height: 75vh;
-}
-.tech {
-	margin: 50px auto;
-}
-.tech-skill {
-	width: 50%;
-	margin: 30px 25%;
-	padding:0;
-	font-size: 16px;
-	font-weight: 400;
-}
-.ruby {
-	padding-top: 10px;
-} 
-.about {
-	font-size: 30px;
-}
-.skill-set-title {
-	font-size: 12.5px;
-}
-.skills {
-	font-size: 11px;
-	margin: 5px;
-}
-.tech-icons {
-	margin-top: 30px;
-}
-.contact {
-	width: 50%;
-	margin: 30px 25%;
-	padding: 0;
-	font-size: 16px;
-	font-weight: 400;
-	background-size: cover;
-}
-.contactIcons {
-	width: 75px;
-	height: 75px;
-	margin: 15px;
-	font-size: 50px;
-}
+ .skill-set-title {
+  font-size: 18px;
+ }
 .contactIcons .fa {
-	color: #60584F;
-	font-size: 30px;
-	text-align: center;
+  font-size: 45px;
 }
-.top-msg {
-	padding-top: 30%;
-}
-}
-/**************************************
-/********* For iPhone6Plus Portrait ********/
-/***************************************/
-
-@media only screen and (max-device-width:670px) and (min-device-width: 376px)  { 
-body {
-	margin: 0;
-}
-#screen1 {
-	width: 80%;
-	margin: 0 10%;
-	height: 100vh;
-	background-image: url("../img/line-top3.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
-.my-name {
-	font-size: 25px;
-	position: relative;
-	top: 23%;
-	background-color: #FFF;
-	border-radius: 80%;
-}
-.my-title {
-	font-size: 15px;
-	top: 18%;
-	background-color: #FFF;
-	border-radius: 80%;
-}
-#screen2 {
-	margin-top: 30px;
-}
-.about {
-	margin: 5px 0;
-	height: auto;
-}
-.three-things p {
-	font-size: 20px;
-}
-ul.three-things-ul {
-	width: 100%;
-}
-.three-things-li {
-	height: 75px;
-	font-size: 10px;
-	padding-top: 11px;
 }
 
-.introduction {
-	margin-top: 20px;
+@media(min-width:768px){
+  .fa-3x {
+    font-size: 2em;
+  }
+  #my-name {
+    font-size: 40px;
+    padding: 10px 0 0 0;
+  }
+  #my-title {
+    font-size: 35px;
+  }
+ .top-sec-background {
+  height: 185px;
+  margin-top: 120px;
+  }
+
+.todo-subject, .skill-subject, .getintouch-subject {
+  margin-top: 50px;
+ }
+.project-subject {
+  margin-top: 50px;
+ }
+ .subject {
+  font-size: 40px;
+ }
+
+#project {
+   width: 100%;
 }
-p.mai-img {
-	display: none;
+ .skill-set-title {
+  font-size: 25px;
+ }
+ .skill-list {
+  margin-top: 50px;
+  margin-bottom: 75px;
+ }
+
+}
+@media(min-width:992px){
+  #my-name {
+    padding: 20px 0 0 0;
+  }
+.top-sec-background {
+  height: 200px;
+  margin-top: 100px;
+ }
+
+ .todo-subject, .skill-subject, .getintouch-subject {
+  margin-top: 100px;
+ }
+.project-subject {
+  margin-top: 80px;
+ }
+  #project {
+  width: 100%;
+}
+ .subject {
+  font-size: 45px;
+ }
+ .project {
+  height: 240px;
+ }
+ .project-title {
+  width: 60%;
+ }
+ .skill-set-title {
+  font-size: 35px;
+ }
+ .skill-list {
+  margin-bottom: 125px;
+ }
+
+}
+@media(min-width:1200px){
+.top-sec-background {
+  height: 300px;
+　}
+.name-title-background {
+  margin-top: 50px;
+  margin-bottom: 150px;
+　}
+
+ .todo-subject, .skill-subject, .getintouch-subject {
+  margin-top: 90px;
+ }
+.project-subject {
+  margin-top: 75px;
+ }
+
+.project {
+  height: 300px;
+}
+ .skill-list {
+  margin-bottom: 75px;
+ }
+ .skill-set-title {
+  font-size: 35px;
+ }
+ .skills {
+  font-size: 30px;
+ }
+
 }
 
-.mai {
-	font-size: 15px;
-	font-weight: 300;
-	padding: 10px;
+/* iphone 5 */
+@media screen and (device-aspect-ratio: 40/71) {
+ #top-sec {
+  height: 100vh;
+ }
+ .top-sec-background {
+  margin-top: 475px;
+ }
+ .three-things-li {
+  margin: 70px 0; 
+ }
+ .mai {
+  margin: 90px 0;
+ }
+ .profile {
+  margin-bottom: 100px;
+ }
+.todo-subject, .skill-subject {
+  margin-top: 150px;
+ }
+ .skill-list {
+  margin-bottom: 150px;
+ }
+ .getintouch-subject {
+  margin-top: 150px;
+ }
+.project-subject {
+  margin-top: 150px;
+ }
+ .project {
+  height: 380px;
+  margin-bottom: 100px;
+ }
+ .skill-set-title {
+  font-size: 35px;
+  margin: 70px 0;
+ }
 }
-#screen3 {
-	height: 50vh;
+
+/* iphone 6 */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+ #top-sec {
+  height: 100vh;
+ }
+ .top-sec-background {
+  margin-top: 500px;
+ }
+ .three-things-li {
+  margin: 70px 0; 
+ }
+ .mai {
+  margin: 90px 0;
+ }
+ .profile {
+  margin-bottom: 150px;
+ }
+ .todo-subject, .skill-subject, .getintouch-subject {
+  margin-top: 150px;
+ }
+.project-subject {
+  margin-top: 100px;
+ }
+ .project {
+  height: 275px;
+  margin-bottom: 100px;
+ }
+  .skill-set-title {
+  font-size: 35px;
+  margin: 70px 0;
+ }
+ .skill-list {
+  margin-bottom: 150px;
+ }
+
 }
-.portfolio {
-	margin: 50px 0;
+
+/*iphone 6 plus */
+@media only screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px)
+    and (device-width : 414px)
+    and (device-height : 736px)
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 3) 
+    and (-webkit-device-pixel-ratio : 3)
+{ 
+.top-sec-background {
+  margin-top: 500px;
+ }
+.todo-subject, .skill-subject, .getintouch-subject {
+  margin-top: 150px;
+ }
+
+ .three-things-li {
+  margin: 70px 0; 
+ }
+ .mai {
+  margin: 90px 0;
+ }
+ .profile {
+  margin-bottom: 175px;
+ }
+.project-subject {
+  margin-top: 75px;
+ }
+ .project {
+  height: 300px;
+  margin-bottom: 100px;
+ }
+ .skill-set-title {
+  font-size: 35px;
+  margin: 70px 0;
+ }
+
+
 }
-figure {
-	font-size: 20px;
-}
-#screen4 {
-	padding-top: 0;
-	height: 75vh;
-}
-.tech {
-	margin: 50px auto;
-}
-.tech-skill {
-	width: 40%;
-	margin: 30px 30%;
-	padding: 0;
-	font-size: 16px;
-	font-weight: 400;
-}
-.ruby {
-	padding-top: 10px;
-} 
-.about {
-	font-size: 30px;
-}
-.skill-set-title {
-	font-size: 13.5px;
-}
-.skills {
-	font-size: 11px;
-	margin: 5px;
-}
-.tech-icons {
-	margin-top: 30px;
-}
-.contact {
-	width: 40%;
-	margin: 30px 30%;
-	padding: 0;
-	font-size: 16px;
-	font-weight: 400;
-}
-.contactIcons {
-	width: 75px;
-	height: 75px;
-	margin: 15px;
-	font-size: 50px;
-}
-.contactIcons .fa {
-	color: #60584F;
-	font-size: 30px;
-	text-align: center;
-}
-.top-msg {
-	padding-top: 30%;
-}
-}
+/*--- End Media Query ---*/
+
+
+
+
+
+
 
 
